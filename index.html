@@ -1,29 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Homepage</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        .navbar-brand img {
+            max-height: 40px;
+        }
+
+        /* Main content styles */
+        .jumbotron {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f8f9fa;
+            border-top: 1px solid #ccc;
+        }
+    </style>
 </head>
-<body class="container">
-    <div style="top: 0%; background-color: azure;position: -webkit-sticky; position: sticky;"><img src="img/food-craft-high-resolution-logo-.png" alt="logo"></div>
-    <div style="width: 30%;margin: auto;margin-top: 50px;">
-    <div class="form-box">
-        <form class="form">
-            <span class="title">Sign up</span>
-            <span class="subtitle">Create a free account with your email.</span>
-            <div class="form-container">
-              <input type="text" class="input" placeholder="Full Name">
-                    <input type="email" class="input" placeholder="Email">
-                    <input type="password" class="input" placeholder="Password">
-            </div>
-            <button>Sign up</button>
-        </form>
-        <div class="form-section">
-          <p>Have an account? <a href="">Log in</a> </p>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/food-craft-high-resolution-logo-.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/Login.html">login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container mt-4">
+        <div class="jumbotron">
+            <h1>Welcome to Our Website</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis, fermentum
+                ligula nec, mattis purus. Nam eget erat libero.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 FoodCraft For equipment solutions. All rights reserved.
+    </footer>
+
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
