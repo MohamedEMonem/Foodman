@@ -4,100 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homepage for FoodCraft">
     <title>Homepage</title>
-    <!-- Add Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        /* Global styles */
+        body,
+        html {
+            height: 95%;
+            padding: 1%;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
+            background-image: url(img/homepage.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        button {
+            display: inline-block;
+            width: auto;
+            background-color: transparent;
+            outline: none;
+            color: white;
+            border-radius: 25px;
+            border-color: white;
+            border-style: solid;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
         }
 
         .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
+            float: left;
+            justify-content: center;
+            align-items: center;
         }
 
-        /* Header styles */
-        .navbar-brand img {
-            max-height: 40px;
-        }
-
-        /* Main content styles */
-        .jumbotron {
-            background-color: #f8f9fa;
-            padding: 40px 20px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Footer styles */
-        footer {
+        section {
+            color: white;
+            font-size: 35pt;
             text-align: center;
-            padding: 10px 0;
-            background-color: #f8f9fa;
-            border-top: 1px solid #ccc;
+            font-weight: 900;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-text-stroke-width: 0.3px;
+            -webkit-text-stroke-color: black;
+            margin-top: 25%;
         }
     </style>
 </head>
 
 <body>
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="img/food-craft-high-resolution-logo-.png" alt="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="html/Login.html">login</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Main content -->
-    <div class="container mt-4">
-        <div class="jumbotron">
-            <h1>Welcome to Our Website</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis, fermentum
-                ligula nec, mattis purus. Nam eget erat libero. Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Repudiandae sed sapiente adipisci nesciunt cumque pariatur, incidunt mollitia provident libero
-                similique saepe, eligendi et debitis. Error laboriosam nisi sequi magni eligendi!</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        &copy; 2024 FoodCraft For equipment solutions. All rights reserved.
-    </footer>
-
-    <!-- Add Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <header>
+        <span class="container">
+            <Button type="button">
+                <span style="padding: 5px; font-size: 21pt;">Menu</span>
+            </Button>
+        </span>
+        <span class="container" style="margin-left: 15%;">
+            <Button type="button" style="background-color: white; width: 750px ;">
+                <img src="img/searchGlass.png" width="21">
+                <span style="padding: 5px; font-size: 21pt;color: rgba(0, 0, 0, 0.562);">Search Products</span>
+            </Button>
+        </span>
+        <span class="container" style="margin-left: 10%;">
+            <Button type="button">
+                <span style="padding: 5px; font-size: 21pt;">Profile</span>
+            </Button>
+        </span>
+    </header>
+    <section>
+        <p>FoodCraft <br> <span> start your resturant </span> </p>
+    </section>
 </body>
 
 </html>
