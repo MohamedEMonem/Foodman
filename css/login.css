@@ -1,0 +1,97 @@
+header {
+    text-align: center;
+    font-size: 28pt;
+}
+
+div {
+    border-radius: 5px;
+    border-color: #2c190a;
+    border-style: solid;
+    padding: 50px 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 100%;
+    border-width: 7px;
+}
+
+section input {
+    width: 50%;
+    background-color: rgb(245, 245, 220);
+    border-color: rgba(0, 0, 0, 0.082);
+    border-radius: 25px;
+}
+
+section p {
+    display: inline-flex;
+    font-size: 16pt;
+    margin-right: 50px;
+}
+
+section button {
+    width: fit-content;
+    margin-left: 40%;
+    cursor: pointer;
+    width: auto;
+    background-color: transparent;
+    outline: none;
+    color: #2c190a;
+    border-radius: 25px;
+    border-color: #2c190a;
+    border-style: solid;
+    font-size: 16pt;
+}
+
+section button:hover {
+    width: fit-content;
+    margin-left: 40%;
+    cursor: pointer;
+    width: auto;
+    background-color: #2c190a;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    border-color: #2c190a;
+    border-style: solid;
+    font-size: 16pt;
+}
+
+a {
+    color: #2c190a;
+    text-decoration: none;
+}
+
+hr {
+    border-color: #2c190a;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    margin-top: 15px;
+}
+
+
+#cnabtn {
+    width: fit-content;
+    margin-left: 30%;
+    cursor: pointer;
+    width: auto;
+    background-color: transparent;
+    outline: none;
+    color: #2c190a;
+    border-radius: 25px;
+    border-color: #2c190a;
+    border-style: solid;
+    font-size: 16pt;
+}
+
+#cnabtn:hover {
+    width: fit-content;
+    margin-left: 30%;
+    cursor: pointer;
+    width: auto;
+    background-color: #2c190a;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    border-color: #2c190a;
+    border-style: solid;
+    font-size: 16pt;
+}
