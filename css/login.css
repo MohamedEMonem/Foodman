@@ -18,8 +18,8 @@ div {
 
 section input {
     width: 50%;
-    background-color: rgb(245, 245, 220);
-    border-color: rgba(0, 0, 0, 0.082);
+    background-color: #c8c8c8;
+    border-style: none;
     border-radius: 25px;
 }
 
@@ -78,10 +78,9 @@ hr {
     background-color: transparent;
     outline: none;
     color: #2c190a;
-    border-radius: 25px;
     border-color: #2c190a;
     border-style: solid;
-    font-size: 16pt;
+    font-size: 20pt;
 }
 
 #cnabtn:hover {
@@ -92,10 +91,9 @@ hr {
     background-color: #2c190a;
     outline: none;
     color: white;
-    border-radius: 25px;
     border-color: #2c190a;
     border-style: solid;
-    font-size: 16pt;
+    font-size: 20pt;
 }
 
 body,
