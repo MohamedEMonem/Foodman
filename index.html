@@ -23,26 +23,29 @@
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenav')">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
+        <a href="#">Categories</a>
+        <hr>
+        <a href="#">Large Equipment</a>
+        <a href="#">Small Equipment</a>
+        <hr>
+        <a href="#">About us</a>
         <a href="#">Contact</a>
     </div>
     <header>
-        <span class="container">
+        <span class="container" style="float: left;">
             <Button type="button" onclick="openNav('mySidenav');closeNav('PSidenav')">
-                <span style="padding: 5px; font-size: 21pt;">Menu</span>
+                <span style="font-size: 150%;">Menu</span>
             </Button>
         </span>
-        <span class="container" style="margin-left: 15%;">
-            <Button type="button" style="background-color: white; width: 750px ;">
-                <img src="img/searchGlass.png" width="21">
-                <span style="padding: 5px; font-size: 21pt;color: rgba(0, 0, 0, 0.562);">Search Products</span>
+        <div class="centered-container">
+            <Button type="button" style="background-color: white; width: fit-content;">
+                <img alt="searchGlass" src="img/searchGlass.png" width="21">
+                <span style="font-size: 150%; color: rgba(0, 0, 0, 0.562);">Search Products</span>
             </Button>
-        </span>
-        <span class="container" style="margin-left: 10%;">
-            <Button type="button" onclick="openNav('PSidenav');closeNav('mySidenav')">
-                <span style="padding: 5px; font-size: 21pt;">Profile</span>
+        </div>
+        <span class="container" style="float: right; margin-top: -30px;">
+            <Button type="button" onclick="openNav('PSidenav');closeNav('mySidenav')" style="right: 1;">
+                <span style=" font-size: 150%;">Profile</span>
             </Button>
         </span>
         <div id="PSidenav" class="psidenav">

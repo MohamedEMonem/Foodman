@@ -1,8 +1,21 @@
 body,
 html {
-    height: 95%;
-    padding: 1%;
+    height: 100%;
 }
+
+.centered-container {
+    text-align: center;
+    margin-right: 70px;
+}
+
+
+.container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 
 body {
     background-image: url(../img/homepage.jpg);
@@ -28,15 +41,9 @@ button:hover {
     color: black;
 }
 
-.container {
-    float: left;
-    justify-content: center;
-    align-items: center;
-}
-
 section {
     color: white;
-    font-size: 35pt;
+    font-size: 200%;
     text-align: center;
     font-weight: 900;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -59,7 +66,7 @@ section {
     top: 0;
     /* Stay at the top */
     left: 0;
-    background-color: #111;
+    background-color: white;
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -74,14 +81,14 @@ section {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #2c190a;
     display: block;
     transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #2c190a94;
 }
 
 /* Position and style the close button (top right corner) */
@@ -127,7 +134,7 @@ section {
     top: 0;
     /* Stay at the top */
     right: 0;
-    background-color: #111;
+    background-color: white;
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -142,14 +149,14 @@ section {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #2c190a;
     display: block;
     transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .psidenav a:hover {
-    color: #f1f1f1;
+    color: #2c190ab4;
 }
 
 /* Position and style the close button (top right corner) */
