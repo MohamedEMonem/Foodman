@@ -11,6 +11,9 @@
         function openNav(id) {
             document.getElementById(id).style.width = "250px";
         }
+        function openNavsearch() {
+            document.getElementById('SearchBar').style.width = "100%";
+        }
 
         /* Set the width of the side navigation to 0 */
         function closeNav(id) {
@@ -33,18 +36,24 @@
     </div>
     <header>
         <span class="container" style="float: left;">
-            <Button type="button" onclick="openNav('mySidenav');closeNav('PSidenav')">
+            <Button type="button" onclick="openNav('mySidenav');closeNav('PSidenav');closeNav('SearchBar')">
                 <span style="font-size: 150%;">Menu</span>
             </Button>
         </span>
         <div class="centered-container">
-            <Button type="button" style="background-color: white; width: fit-content;">
+            <Button type="button" style="background-color: white; width: fit-content;"
+                onclick="openNavsearch();closeNav('PSidenav');closeNav('mySidenav')">
                 <img alt="searchGlass" src="img/searchGlass.png" width="21">
                 <span style="font-size: 150%; color: rgba(0, 0, 0, 0.562);">Search Products</span>
             </Button>
         </div>
+        <div id="SearchBar" class="SearchBar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('SearchBar')">&times;</a>
+            <a href="#">search</a>
+        </div>
         <span class="container" style="float: right; margin-top: -30px;">
-            <Button type="button" onclick="openNav('PSidenav');closeNav('mySidenav')" style="right: 1;">
+            <Button type="button" onclick="openNav('PSidenav');closeNav('mySidenav');closeNav('SearchBar')"
+                style="right: 1;">
                 <span style=" font-size: 150%;">Profile</span>
             </Button>
         </span>
@@ -55,7 +64,7 @@
             <a href="#">Sign Up</a>
         </div>
     </header>
-    <span onclick="closeNav('mySidenav');closeNav('PSidenav')">
+    <span onclick="closeNav('mySidenav');closeNav('PSidenav');closeNav('SearchBar')">
         <section>
             <p>FoodCraft<br><span>Start your startup resturant</span></p>
         </section>
