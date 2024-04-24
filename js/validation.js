@@ -40,6 +40,8 @@ return true
 }
 function chkphone(event){
     phone=document.getElementById("Phone").value;
+    let validinput
+    if()
     if(phone.length!==11){
         alert("phone number length should be 11 number")
         event.preventDefault();

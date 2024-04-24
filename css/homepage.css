@@ -58,7 +58,7 @@ section {
 
 /* The side navigation menu */
 .sidenav {
-  width: fit-content;
+  width: 0;
   height: fit-content;
   border-radius: 0 50px 50px 50px ;
     position: fixed;
@@ -127,7 +127,7 @@ section {
 
 /* The side navigation menu */
 .psidenav {
-    width: 10%;
+    width: 0;
     height: fit-content;
     border-radius: 50px 0px 0 50px ;
     text-align: right;
@@ -145,6 +145,7 @@ section {
     padding-top: 60px;
     padding-bottom: 40px;
     padding-right: 50px;
+    visibility: hidden;
 
     /* Place content 60px from the top */
     transition: 0.5s;

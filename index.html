@@ -9,9 +9,14 @@
     <script>
         /* Set the width of the side navigation to 250px */
         function openNav(id) {
+            if(id===PSidenav){
+            document.getElementById(id).style.width = "10%" ;
+            document.getElementById(id).style.visibility = "visible";
+            }
+            else{
             document.getElementById(id).style.width = "fit-content";
             document.getElementById(id).style.visibility = "visible";
-
+            }
             
         }
         function openNavsearch() {
