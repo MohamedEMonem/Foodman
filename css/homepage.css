@@ -29,8 +29,8 @@ li {
     margin: 0 10px;
 }
 
-a {
-    font-size: 18pt;
+.headerNav {
+    font-size: 100%;
     font-weight: bold;
     padding: 10px;
     color: white;
@@ -39,6 +39,7 @@ a {
     border-color: white;
     border-width: 3px;
     border-style: solid;
+    cursor: pointer;
 }
 
 .search-bar {
@@ -80,10 +81,109 @@ section div {
 }
 
 section h1 {
-    font-size: 48pt;
+    font-size: 350%;
     font-weight: 520;
 }
 
 section p {
-    font-size: 24pt;
+    font-size: 175%;
+}
+
+
+/* The side navigation menu */
+.menuSideBar {
+    height: 55%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: white;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 25px;
+}
+
+/* The navigation menu links */
+.menuSideBar a,
+.profileSideBar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 156.25%;
+    color: #3e2e23;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.menuSideBar a:hover,
+.profileSideBar a:hover {
+    color: #d6baaa;
+}
+
+/* Position and style the close button (top right corner) */
+.menuSideBar .closebtn,
+.profileSideBar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+
+    .menuSideBar,
+    .profileSideBar {
+        padding-top: 93.75%;
+    }
+
+    .menuSideBar a,
+    .profileSideBar a {
+        font-size: 112.50%;
+    }
+}
+
+.profileSideBar {
+    height: 50%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: white;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 25px;
 }

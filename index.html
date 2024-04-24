@@ -7,22 +7,47 @@
     <title>HomePage</title>
     <link rel="stylesheet" href="css/homepage.css">
     <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav(id) {
+            document.getElementById(id).style.width = "250px";
+        }
 
+        /* Set the width of the side navigation to 0 */
+        function closeNav(id) {
+            document.getElementById(id).style.width = "0";
+        }
     </script>
 </head>
 
 <body>
+    <div id="menuSideBar" class="menuSideBar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('menuSideBar')">&times;</a>
+        <a href="#">categories</a>
+        <hr>
+        <a href="#">large equipments</a>
+        <a href="#">small equipments</a>
+        <hr>
+        <a href="#">About us</a>
+        <a href="#">Contact</a>
+    </div>
+    <div id="profileSideBar" class="profileSideBar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('profileSideBar')">&times;</a>
+        <a href="#">Profile</a>
+        <a href="html/Login.html">sign in</a>
+        <a href="html/Signup.html">sing up</a>
+    </div>
     <header>
         <nav>
-            <a id="menu" href="#" onclick="">Menu</a>
+            <span class="headerNav" id="menu" onclick="openNav('menuSideBar');closeNav('profileSideBar')">Menu</span>
             <div class="search-bar">
                 <input id="search" class="search" type="search" placeholder="🔍 Search FoodCraft">
             </div>
-            <a id="profile" href="#" onclick="">Profile</a>
+            <span class="headerNav" id="profile"
+                onclick="openNav('profileSideBar');closeNav('menuSideBar')">Profile</span>
         </nav>
     </header>
 
-    <section class="main">
+    <section class=" main" onclick="closeNav('menuSideBar');closeNav('profileSideBar')">
         <div class="main-content">
             <h1>FoodCraft</h1>
             <p>Start Your Startup Resturant</p>
