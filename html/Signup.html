@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/validation.js"></script>
+
 </head>
 
 <body>
@@ -16,16 +18,23 @@
     </header>
     <div>
         <section id="login">
+
             <p style="font-weight: bold;font-size: 20pt ; margin-top: -100px;margin-left: -20px;">Sign-up</p>
-            <form action="../php/register.php" method="POST">
+
+            <form method="POST" id="signupform" onsubmit="return formchk(event)">
+                
                 <p>First name</p> <input id="fname" type="text" style="width: 25%;">
                 <p>&nbsp&nbsp&nbsp&nbspLast name</p> <input id="fname" type="text" style="width: 25%;"><br>
                 <p>&nbsp&nbspEmail &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 </p> <input id="email" type="email"><br>
-                <p>Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p> <input
-                    id="password" type="password"><br>
-                <p>Confirm Password</p> <input id="con-password" type="password"><br>
-                <p>Phone number&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p> <input id="Phone" type="tel"><br>
+                <p>Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                <input id="password" type="password"><br>
+                <p>Confirm Password</p> 
+
+                <input id="con-password" type="password"><br>
+                <p>Phone number <input type="text" value="+20" onfocus="this.blur()" size="1px" style="text-align: center; height: 25px;"></p> 
+                
+                <input id="Phone" type="tel"><br>
                 <button type="submit">Sign-up</button>
             </form>
         </section>

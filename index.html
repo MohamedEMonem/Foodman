@@ -9,15 +9,21 @@
     <script>
         /* Set the width of the side navigation to 250px */
         function openNav(id) {
-            document.getElementById(id).style.width = "250px";
+            document.getElementById(id).style.width = "fit-content";
+            document.getElementById(id).style.visibility = "visible";
+
+            
         }
         function openNavsearch() {
             document.getElementById('SearchBar').style.width = "100%";
+            document.getElementById('SearchBar').style.visibility = "visible";
+
         }
 
         /* Set the width of the side navigation to 0 */
         function closeNav(id) {
             document.getElementById(id).style.width = "0";
+            document.getElementById(id).style.visibility="hidden"        
         }
     </script>
     <link rel="stylesheet" href="css/homepage.css">
@@ -26,26 +32,42 @@
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenav')">&times;</a>
-        <a href="#">Categories</a>
-        <hr>
-        <a href="#">Large Equipment</a>
-        <a href="#">Small Equipment</a>
-        <hr>
-        <a href="#">About us</a>
-        <a href="#">Contact</a>
+
+        <div style=" color: #3E2E23;border-color: #3E2E23;padding:8px;margin: auto;margin-top: 10px; ">
+
+        <span style="font-size:50px; margin-left: 40px ;"> Categories </span>
+
+        <hr style="height: 2px;background-color: black; width: 70%;">
+
+        <a href="#" style="text-decoration:none ;"><button class="special" type="button" >Large Equipment</button></a>
+
+        <a href="#" style="text-decoration:none ;"><button class="special" type="button">Small Equipment</button></a>
+
+        <hr style="height: 2px;background-color: black; width: 70%;">
+
+        <a href="#"style="text-decoration:none ;"><button class="special" type="button" >About us</button></a>
+
+        <a href="#"style="text-decoration:none ;"><button class="special" type="button">Contact</button></a>
+
+        <hr style="height: 2px;background-color: black; width: 70%;">
+    </div>
+</div>
     </div>
     <header>
         <span class="container" style="float: left;">
-            <Button type="button" onclick="openNav('mySidenav');closeNav('PSidenav');closeNav('SearchBar')">
+            <Button class="special" type="button" onclick="openNav('mySidenav');closeNav('PSidenav');closeNav('SearchBar')" style="border: 9;margin-left: 50px;">
                 <span style="font-size: 150%;">Menu</span>
             </Button>
         </span>
+        <!-- search-bar code  -->
         <div class="centered-container">
-            <Button type="button" style="background-color: white; width: fit-content;"
-                onclick="openNavsearch();closeNav('PSidenav');closeNav('mySidenav')">
-                <img alt="searchGlass" src="img/searchGlass.png" width="21">
-                <span style="font-size: 150%; color: rgba(0, 0, 0, 0.562);">Search Products</span>
-            </Button>
+            <button type="button" style="background-color: white; width: 500px; text-align: left; margin-top: 20px;"
+            onclick="openNavsearch();closeNav('PSidenav');closeNav('mySidenav')">
+        <img alt="searchGlass" src="img/searchGlass.png" width="21" style="margin-right: 10px;">
+        <span style="font-size: 150%; color: rgba(0, 0, 0, 0.562);">Search Products</span>
+    </button>
+    
+
         </div>
         <div id="SearchBar" class="SearchBar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav('SearchBar')">&times;</a>
@@ -54,21 +76,28 @@
             </div>
         </div>
         <span class="container" style="float: right; margin-top: -30px;">
-            <Button type="button" onclick="openNav('PSidenav');closeNav('mySidenav');closeNav('SearchBar')"
-                style="right: 1;">
+            <Button class="special" type="button" onclick="openNav('PSidenav');closeNav('mySidenav');closeNav('SearchBar')"
+                style="right: 1; margin-right: 50px;">
                 <span style=" font-size: 150%;">Profile</span>
             </Button>
         </span>
+        <!--  llll;;;;;;;;;;;;;;;klllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll   -->
         <div id="PSidenav" class="psidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav('PSidenav')">&times;</a>
-            <a href="#">Profile</a>
-            <a href="html/Login.html">Sing In</a>
-            <a href="html/Signup.html">Sign Up</a>
+
+            <div style="width: max-content;">         
+                <span style="font-size:50px; margin-left: 40px ;">Profile</span>
+                <a href="html/Login.html"><button class="special" type="button" style="width: fit-content; color: #3E2E23;font-size: large;">Sign In</button></a>
+                <a href="html/Signup.html"><button class="special" type="button" style="width: fit-content;color: #3E2E23; font-size: large;">Sign Up</button></a>
+            </div>
+
+
         </div>
     </header>
+
     <span onclick="closeNav('mySidenav');closeNav('PSidenav');closeNav('SearchBar')">
         <section>
-            <p>FoodCraft<br><span>Start your startup resturant</span></p>
+            <p><span style="font-size: 250%;font-weight:400;">FoodCraft</span><br><span>Start Your Startup Resturant</span></p>
         </section>
     </span>
 </body>
