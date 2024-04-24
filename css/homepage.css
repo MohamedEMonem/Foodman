@@ -3,21 +3,8 @@ html {
     height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.centered-container {
-    text-align: center;
-    margin-right: 70px;
-}
-
-
-.container {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
 
 body {
     background-image: url(../img/homepage.jpg);
@@ -26,337 +13,77 @@ body {
     background-size: cover;
 }
 
-button {
-    display: inline-block;
-    width: auto;
-    background-color: transparent;
-    outline: none;
-    color: white;
-    border-radius: 25px;
-    border-color: white;
-    border-style: solid;
-    cursor: pointer;
+nav {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    /* Center the items horizontally */
+    align-items: center;
 }
 
-button:hover {
-    background-color: white;
-    color: black;
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    font-size: 18pt;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.search-bar {
+    flex: 1;
+    /* Make the search bar take up available space */
+    text-align: center;
+    /* Center the input inside the search bar */
+}
+
+.search {
+    width: 100%;
+    /* Make the input take full width of search bar */
+    max-width: 400px;
+    /* Limit maximum width for responsiveness */
+    padding: 10px;
+    /* Add padding for better appearance */
+    border-style: none;
+    border-radius: 35px;
+}
+
+#profile {
+    margin-right: 25px;
+}
+
+#menu {
+    margin-left: 25px;
 }
 
 section {
-    color: white;
-    font-size: 190%;
-    text-align: center;
-    font-weight: 900;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    -webkit-text-stroke-width: 0.3px;
-    -webkit-text-stroke-color: black;
-    padding-top: 15%;
-    padding-bottom: 5%;
-
-}
-
-/* The side navigation menu */
-.sidenav {
-  width: 0;
-  height: fit-content;
-  border-radius: 0 50px 50px 50px ;
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    /* Stay at the top */
-    left: 0;
-    background-color: white;
-    /* Black*/
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 30px;
-    /* Place content 60px from the top */
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidenav */
-    visibility: hidden;
-}
-
-/* The navigation menu links */
-.sidenav a button {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #2c190a;
-    display: block;
-    transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #2c190a94;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-
-    .sidenav,
-    .psidenav,
-    .SearchBar {
-        padding-top: 15px;
-    }
-
-    .sidenav a,
-    .psidenav a,
-    .SearchBar a {
-        font-size: 18px;
-    }
-}
-
-/* The side navigation menu */
-.psidenav {
-    width: 0;
-    height: fit-content;
-    border-radius: 50px 0px 0 50px;
-    text-align: right;
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    /* Stay at the top */
-    right: 0;
-    background-color: white;
-    /* Black*/
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 60px;
-    padding-bottom: 40px;
-    padding-right: 50px;
-    visibility: hidden;
-
-    /* Place content 60px from the top */
-    /* 0.5 second transition effect to slide in the sidenav */
-    visibility: hidden;
-}
-
-/* The navigation menu links */
-.psidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #2c190a;
-    display: block;
-    transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.psidenav a:hover {
-    color: #2c190ab4;
-}
-
-/* Position and style the close button (top right corner) */
-.psidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-
-/* The side navigation menu */
-.SearchBar {
-    /* margin: 20px; */
-    height: 66px;
-    /* 100% Full-height */
-    width: 0;
-    /* 0 width - change this with JavaScript */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    /* Stay at the top */
-    left: 0;
-    background-color: white;
-    /* Black*/
-    overflow-x: hidden;
-    overflow-y: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 0px;
-    /* Place content 60px from the top */
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidenav */
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 35px;
-    border-bottom-right-radius: 35px;
-}
-
-/* The navigation menu links */
-.SearchBar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #2c190a;
-    display: block;
-    transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.SearchBar a:hover {
-    color: #2c190ab4;
-}
-
-/* Position and style the close button (top right corner) */
-.SearchBar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.group {
     display: flex;
-    line-height: 28px;
+    justify-content: center;
     align-items: center;
-    position: relative;
-    max-width: 190px;
+    height: 100%;
 }
 
-.input {
-    width: 100%;
-    height: 40px;
-    line-height: 28px;
-    padding: 0 1rem;
-    padding-left: 2.5rem;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    outline: none;
-    background-color: #f3f3f4;
-    color: #0d0c22;
-    transition: .3s ease;
+section div {
+    text-align: center;
+    color: white;
 }
 
-.input::placeholder {
-    color: #9e9ea7;
+section h1 {
+    font-size: 48pt;
+    font-weight: 520;
 }
 
-.input:focus,
-input:hover {
-    outline: none;
-    border-color: rgba(234, 76, 137, 0.4);
-    background-color: #fff;
-    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
-}
-
-.icon {
-    position: absolute;
-    left: 1rem;
-    fill: #9e9ea7;
-    width: 1rem;
-    height: 1rem;
-}
-
-button.special {
-    margin: 20px;
-    position: relative;
-    padding: 4px 16px;
-    border-radius: 50px;
-    border: 3px solid rgb(255, 255, 255);
-    font-size: 14px;
-    text-transform: none;
-    font-weight: 300;
-    letter-spacing: 2px;
-    background: transparent;
-    color: #fff;
-    overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-
-button.special:hover {
-    background: rgb(61, 106, 255);
-    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
-button.special:hover::before {
-    -webkit-animation: sh02 0.5s 0s linear;
-    -moz-animation: sh02 0.5s 0s linear;
-    animation: sh02 0.5s 0s linear;
-}
-
-button.special::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-}
-
-@keyframes sh02 {
-    from {
-        opacity: 0;
-        left: 0%;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-        left: 100%;
-    }
-}
-
-button.special:active {
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: box-shadow 0.2s ease-in;
-    -moz-transition: box-shadow 0.2s ease-in;
-    transition: box-shadow 0.2s ease-in;
-}
-
-#PSidenav .special {
-    /* Adjusted margin to reduce space between buttons */
-    margin: 10px;
-    /* Set display to inline-block to allow buttons to appear side by side */
-
-    padding: 0 20px;
-    height: 30px;
+section p {
+    font-size: 24pt;
 }
