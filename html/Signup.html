@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html">
+            <h1>FoodCraft</h1>
+        </a>
+    </header>
+
+    <section class="form">
+        <p>Sign Up</p>
+        <form action="php/signup.php" method="POST">
+            <label for="first-name">First Name</label>
+            <input class="name" type="text" name="first-name" id="first-name" required>
+            <label for="last-name">Last Name</label>
+            <input class="name " type="text" name="last-name" id="last-name" required><br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required><br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required><br><br>
+            <label for="confirm-password">Confirm Password</label>
+            <input class="CON-PASS" type="password" name="confirm-password" id="confirm-password" required><br><br>
+            <label for="mobile-phone">Mobile Phone</label>
+            <input type="tel" name="mobile-phone" id="mobile-phone" required><br><br>
+            <button type="submit">Sign Up</button><br><br><br>
+        </form>
+        <a href="#">Need Help?</a>
+        <hr>
+        <a class="CNA" href="Login.html">Already have an account? Login</a>
+        <br><br>
+        <br><br>
+    </section>
+
+</body>
+
+</html>
