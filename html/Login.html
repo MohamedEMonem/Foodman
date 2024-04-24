@@ -4,30 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <title>Login</title>
 </head>
 
 <body>
+
     <header>
         <a href="../index.html">
             <p>FoodCraft</p>
         </a>
     </header>
-    <div>
-        <section id="login">
-            <p style="font-weight: bold;font-size: 20pt ; margin-top: -100px;margin-left: -20px;">Sign in</p>
-            <form action="../php/login.php" method="POST">
-                <p>&nbsp&nbspEmail &nbsp&nbsp</p> <input id="email" type="email"><br>
-                <p>Password</p> <input id="password" type="password"><br>
-                <button type="submit" >Login</button>
-            </form>
-            <p><a href="#">Need Help?</a></p>
-            <hr>
-        </section><a href="Signup.html">
-            <button id="cnabtn" type="button"> Create new account</button>
-        </a>
-    </div>
+
+    <section class="form">
+        <form action="php/login.php" method="POST">
+            <label for="email">Email:</label><br
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password:</label><br
+            <input type="password" name="password" id="password" required>
+            <button type="submit">Login</button><br>
+        </form>
+    </section>
+
 </body>
 
 </html>
