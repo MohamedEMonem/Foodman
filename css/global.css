@@ -1,0 +1,55 @@
+
+nav {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    /* Center the items horizontally */
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 0 10px;
+}
+
+.headerNav {
+    font-size: 100%;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.search-bar {
+    flex: 1;
+    /* Make the search bar take up available space */
+    text-align: center;
+    /* Center the input inside the search bar */
+}
+
+.search {
+    width: 100%;
+    /* Make the input take full width of search bar */
+    max-width: 400px;
+    /* Limit maximum width for responsiveness */
+    padding: 10px;
+    /* Add padding for better appearance */
+    border-style: none;
+    border-radius: 35px;
+}
+
+#profile {
+    margin-right: 25px;
+}
+
+#menu {
+    margin-left: 25px;
+}
