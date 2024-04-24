@@ -1,0 +1,594 @@
+.large-equipment-1-child {
+    position: absolute;
+    top: 63px;
+    left: 319px;
+    border-radius: 50px;
+    width: 256px;
+    height: 20px;
+}
+.large-equipment-1-item {
+    position: absolute;
+    top: 59px;
+    left: 795px;
+    border-radius: 50px;
+    background-color: rgba(54, 38, 25, 0);
+    border: 2px solid #493d33;
+    box-sizing: border-box;
+    width: 81px;
+    height: 24px;
+}
+.profile-icon {
+    position: absolute;
+    top: 64.58px;
+    left: 814.2px;
+    width: 44px;
+    height: 11.6px;
+    cursor: pointer;
+}
+.menu-icon {
+    position: absolute;
+    top: 65.09px;
+    left: 78.2px;
+    width: 37.9px;
+    height: 11.1px;
+}
+.large-equipment-1-inner {
+    position: absolute;
+    top: 59px;
+    left: 57px;
+    border-radius: 50px;
+    background-color: rgba(44, 25, 10, 0);
+    border: 2px solid #2c190a;
+    box-sizing: border-box;
+    width: 81px;
+    height: 24px;
+}
+.layer-2-icon {
+    position: absolute;
+    height: 0.65%;
+    width: 1.53%;
+    top: 4.44%;
+    right: 62.81%;
+    bottom: 94.91%;
+    left: 35.66%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    cursor: pointer;
+}
+.search-foodcraft-icon {
+    position: absolute;
+    top: 69px;
+    left: 348px;
+    width: 81.1px;
+    height: 7.7px;
+    cursor: pointer;
+}
+.foodcraft-icon {
+    position: absolute;
+    top: 67px;
+    left: 605px;
+    width: 75.3px;
+    height: 12.4px;
+}
+.results {
+    position: absolute;
+    top: 142px;
+    left: 135px;
+    color: #2c190a;
+}
+.ovens1 {
+    margin: 0;
+}
+.ovens {
+    position: absolute;
+    top: 190px;
+    left: 168px;
+    display: inline-block;
+    width: 89px;
+    height: 32px;
+}
+.line-div {
+    position: absolute;
+    top: 175.5px;
+    left: 291px;
+    border-right: 1px solid #2c190a;
+    box-sizing: border-box;
+    width: 1px;
+    height: 1291px;
+}
+.ranges-and-ventilation {
+    position: absolute;
+    top: 190px;
+    left: 324px;
+}
+.prime-673-540-1-icon {
+    position: absolute;
+    top: 238px;
+    left: 148px;
+    width: 106px;
+    height: 85px;
+    object-fit: cover;
+}
+.kitchen-oven-stove-isolated-on-icon {
+    position: absolute;
+    top: 369px;
+    left: 126px;
+    width: 148px;
+    height: 87px;
+    object-fit: cover;
+}
+.ab640a471be936b18648fdab1-1-icon {
+    position: absolute;
+    top: 517px;
+    left: 138px;
+    width: 126px;
+    height: 95px;
+    object-fit: cover;
+}
+.images-1-icon {
+    position: absolute;
+    top: 648px;
+    left: 137px;
+    width: 126px;
+    height: 126px;
+    object-fit: cover;
+}
+.images-1-1 {
+    position: absolute;
+    top: 241px;
+    left: 367px;
+    width: 117px;
+    height: 117px;
+    object-fit: cover;
+}
+.hurricane-884x700-1-icon {
+    position: absolute;
+    top: 358px;
+    left: 374px;
+    width: 132px;
+    height: 105px;
+    object-fit: cover;
+}
+.images-2-1 {
+    position: absolute;
+    top: 516px;
+    left: 380px;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+.images-3-1 {
+    position: absolute;
+    top: 659px;
+    left: 373px;
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+}
+.large-equipment-1-child1 {
+    position: absolute;
+    top: 178.5px;
+    left: 573.5px;
+    border-right: 1px solid #2c190a;
+    box-sizing: border-box;
+    width: 1px;
+    height: 596px;
+}
+.food-processors {
+    position: absolute;
+    top: 190px;
+    left: 620px;
+}
+.th-1-icon {
+    position: absolute;
+    top: 228px;
+    left: 638px;
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+}
+.th-1-1 {
+    position: absolute;
+    top: 358px;
+    left: 636px;
+    width: 108px;
+    height: 108px;
+    object-fit: cover;
+}
+.th-2-1 {
+    position: absolute;
+    top: 503px;
+    left: 669px;
+    width: 60px;
+    height: 123px;
+    object-fit: cover;
+}
+.th-3-1 {
+    position: absolute;
+    top: 660px;
+    left: 640px;
+    width: 114px;
+    height: 104px;
+    object-fit: cover;
+}
+.mixers {
+    position: absolute;
+    top: 784px;
+    left: 168px;
+    display: inline-block;
+    width: 89px;
+    height: 32px;
+}
+.th-4-1 {
+    position: absolute;
+    top: 837px;
+    left: 148px;
+    width: 111px;
+    height: 111px;
+    object-fit: cover;
+}
+.th-5-1 {
+    position: absolute;
+    top: 987px;
+    left: 148px;
+    width: 103px;
+    height: 101px;
+    object-fit: cover;
+}
+.th-6-1 {
+    position: absolute;
+    top: 1145px;
+    left: 150px;
+    width: 103px;
+    height: 123px;
+    object-fit: cover;
+}
+.th-7-1 {
+    position: absolute;
+    top: 1325px;
+    left: 145px;
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+}
+.slicers {
+    position: absolute;
+    top: 784px;
+    left: 411px;
+    display: inline-block;
+    width: 89px;
+    height: 32px;
+}
+.th-8-1 {
+    position: absolute;
+    top: 830px;
+    left: 380px;
+    width: 129px;
+    height: 129px;
+    object-fit: cover;
+}
+.th-9-1 {
+    position: absolute;
+    top: 973px;
+    left: 364px;
+    width: 161px;
+    height: 129px;
+    object-fit: cover;
+}
+.th-10-1 {
+    position: absolute;
+    top: 1128px;
+    left: 374px;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+.th-11-1 {
+    position: absolute;
+    top: 1307px;
+    left: 388px;
+    width: 112px;
+    height: 143px;
+    object-fit: cover;
+}
+.large-equipment-1-child2 {
+    position: absolute;
+    top: 773.5px;
+    left: 574.5px;
+    border-right: 1px solid #2c190a;
+    box-sizing: border-box;
+    width: 1px;
+    height: 693px;
+}
+.rectangle-div {
+    position: absolute;
+    top: 176px;
+    left: 0px;
+    background-color: #2c190a;
+    width: 127px;
+    height: 1356px;
+}
+.rectangle-icon {
+    position: absolute;
+    top: 176px;
+    left: 801px;
+    width: 116px;
+    height: 1356px;
+}
+.large-equipment-1-child3 {
+    position: absolute;
+    top: 177.54px;
+    left: 125.5px;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+    width: 676px;
+    height: 1px;
+}
+.large-equipment-1-child4 {
+    position: absolute;
+    top: 765.5px;
+    left: 126.5px;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+    width: 676px;
+    height: 1px;
+}
+.gas-or-electric {
+    position: absolute;
+    top: 784px;
+    left: 603px;
+}
+.th-12-1 {
+    position: absolute;
+    top: 853px;
+    left: 629px;
+    width: 122px;
+    height: 63px;
+    object-fit: cover;
+}
+.th-13-1 {
+    position: absolute;
+    top: 1009px;
+    left: 623px;
+    width: 135px;
+    height: 57px;
+    object-fit: cover;
+}
+.th-14-1 {
+    position: absolute;
+    top: 1153px;
+    left: 632px;
+    width: 122px;
+    height: 122px;
+    object-fit: cover;
+}
+.th-15-1 {
+    position: absolute;
+    top: 1335px;
+    left: 626px;
+    width: 128px;
+    height: 118px;
+    object-fit: cover;
+}
+.large-equipment-1-child5 {
+    position: absolute;
+    top: 1465.5px;
+    left: 126.5px;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+    width: 676px;
+    height: 1px;
+}
+.large-equipment-1-child6 {
+    position: absolute;
+    top: 1532px;
+    left: 127px;
+    background-color: #2c190a;
+    width: 66px;
+    height: 675px;
+    transform:  rotate(-90deg);
+    transform-origin: 0 0;
+}
+.vector-icon {
+    position: absolute;
+    height: 1.29%;
+    width: 2.16%;
+    top: 49.35%;
+    right: 4.71%;
+    bottom: 49.36%;
+    left: 93.13%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+.large-equipment-1 {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 1532px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 20px;
+    color: #000;
+    font-family: Jomolhari;
+}
+
+
+.menu-2-page-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px 30px 30px 30px;
+    background-color: #fdfbfb;
+    width: 242px;
+    height: 322px;
+}
+.menu-2-page-item {
+    position: absolute;
+    top: 6px;
+    left: 18px;
+    border-radius: 50px;
+    background-color: #3e2e23;
+    width: 92px;
+    height: 34px;
+}
+.menu-icon1 {
+    position: absolute;
+    top: 17px;
+    left: 44px;
+    width: 37.9px;
+    height: 11.1px;
+}
+.categories-icon {
+    position: absolute;
+    top: 54px;
+    left: 18px;
+    width: 124px;
+    height: 20.2px;
+}
+.large-equipment-icon {
+    position: absolute;
+    top: 103.52px;
+    left: 31.56px;
+    width: 130.3px;
+    height: 15.9px;
+    cursor: pointer;
+}
+.about-us-icon {
+    position: absolute;
+    top: 192.13px;
+    left: 37.24px;
+    width: 69.5px;
+    height: 12.1px;
+}
+.menu-2-page-inner {
+    position: absolute;
+    top: 81.5px;
+    left: 17.5px;
+    border-top: 1px solid #3e2e23;
+    box-sizing: border-box;
+    width: 160px;
+    height: 1px;
+}
+.small-equipment-icon {
+    position: absolute;
+    top: 140.13px;
+    left: 32.96px;
+    width: 128.7px;
+    height: 16.1px;
+}
+.menu-2-page-child1 {
+    position: absolute;
+    top: 95px;
+    left: 18px;
+    border-radius: 20px;
+    background-color: rgba(62, 46, 35, 0.01);
+    border: 1px solid #3e2e23;
+    box-sizing: border-box;
+    width: 159px;
+    height: 29px;
+}
+.menu-2-page-child2 {
+    position: absolute;
+    top: 132px;
+    left: 18px;
+    border-radius: 20px;
+    background-color: rgba(62, 46, 35, 0.01);
+    border: 1px solid #3e2e23;
+    box-sizing: border-box;
+    width: 159px;
+    height: 29px;
+}
+.menu-2-page-child3 {
+    position: absolute;
+    top: 175.5px;
+    left: 17.5px;
+    border-top: 1px solid #3e2e23;
+    box-sizing: border-box;
+    width: 160px;
+    height: 1px;
+}
+.menu-2-page-child4 {
+    position: absolute;
+    top: 184px;
+    left: 18px;
+    border-radius: 20px;
+    background-color: rgba(62, 46, 35, 0.01);
+    border: 1px solid #3e2e23;
+    box-sizing: border-box;
+    width: 113px;
+    height: 29px;
+}
+.menu-2-page-child5 {
+    position: absolute;
+    top: 221px;
+    left: 18px;
+    border-radius: 20px;
+    background-color: rgba(62, 46, 35, 0.01);
+    border: 1px solid #3e2e23;
+    box-sizing: border-box;
+    width: 113px;
+    height: 29px;
+}
+.menu-2-page-child6 {
+    position: absolute;
+    top: 263.5px;
+    left: 17.5px;
+    border-top: 1px solid #3e2e23;
+    box-sizing: border-box;
+    width: 160px;
+    height: 1px;
+}
+.contact-us-icon {
+    position: absolute;
+    top: 229.26px;
+    left: 34.04px;
+    width: 81px;
+    height: 12.1px;
+}
+.vector-icon1 {
+    position: absolute;
+    height: 3.82%;
+    width: 2.16%;
+    top: 55.79%;
+    right: 76.03%;
+    bottom: 40.39%;
+    left: 21.81%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+.menu-2-page-child7 {
+    position: absolute;
+    top: 282px;
+    left: 18px;
+    border-radius: 50px;
+    background-color: #3e2e23;
+    width: 92px;
+    height: 34px;
+}
+.home {
+    position: absolute;
+    top: 282px;
+    left: 37px;
+    cursor: pointer;
+}
+.menu-2-page {
+    width: 917px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    height: 518px;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    font-family: Jomolhari;
+}
+
