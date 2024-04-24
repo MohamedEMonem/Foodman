@@ -53,7 +53,7 @@ section {
     -webkit-text-stroke-color: black;
     padding-top: 15%;
     padding-bottom: 5%;
-    
+
 }
 
 /* The side navigation menu */
@@ -76,6 +76,7 @@ section {
     /* Place content 60px from the top */
     transition: 0.5s;
     /* 0.5 second transition effect to slide in the sidenav */
+    visibility: hidden;
 }
 
 /* The navigation menu links */
@@ -129,7 +130,7 @@ section {
 .psidenav {
     width: 0;
     height: fit-content;
-    border-radius: 50px 0px 0 50px ;
+    border-radius: 50px 0px 0 50px;
     text-align: right;
     position: fixed;
     /* Stay in place */
@@ -148,8 +149,8 @@ section {
     visibility: hidden;
 
     /* Place content 60px from the top */
-    transition: 0.5s;
     /* 0.5 second transition effect to slide in the sidenav */
+    visibility: hidden;
 }
 
 /* The navigation menu links */
@@ -184,8 +185,8 @@ section {
 
 /* The side navigation menu */
 .SearchBar {
-    margin: 20px;
-    height: 50px;
+    /* margin: 20px; */
+    height: 66px;
     /* 100% Full-height */
     width: 0;
     /* 0 width - change this with JavaScript */
@@ -207,8 +208,8 @@ section {
     /* 0.5 second transition effect to slide in the sidenav */
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
 }
 
 /* The navigation menu links */
@@ -276,6 +277,7 @@ input:hover {
     width: 1rem;
     height: 1rem;
 }
+
 button.special {
     margin: 20px;
     position: relative;
@@ -293,23 +295,23 @@ button.special {
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-  }
-  
-  button.special:hover {
+}
+
+button.special:hover {
     background: rgb(61, 106, 255);
     box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-  }
-  
-  button.special:hover::before {
+}
+
+button.special:hover::before {
     -webkit-animation: sh02 0.5s 0s linear;
     -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
-  }
-  
-  button.special::before {
+}
+
+button.special::before {
     content: '';
     display: block;
     width: 0px;
@@ -325,35 +327,36 @@ button.special {
     -ms-transform: skewX(-20deg);
     -o-transform: skewX(-20deg);
     transform: skewX(-20deg);
-  }
-  
-  @keyframes sh02 {
+}
+
+@keyframes sh02 {
     from {
-      opacity: 0;
-      left: 0%;
+        opacity: 0;
+        left: 0%;
     }
-  
+
     50% {
-      opacity: 1;
+        opacity: 1;
     }
-  
+
     to {
-      opacity: 0;
-      left: 100%;
+        opacity: 0;
+        left: 100%;
     }
-  }
-  
-  button.special:active {
+}
+
+button.special:active {
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
-  }
-  #PSidenav .special {
+}
+
+#PSidenav .special {
     /* Adjusted margin to reduce space between buttons */
     margin: 10px;
     /* Set display to inline-block to allow buttons to appear side by side */
-   
+
     padding: 0 20px;
     height: 30px;
 }
