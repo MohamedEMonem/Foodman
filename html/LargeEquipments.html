@@ -7,16 +7,31 @@
     <title>Large Equipments</title>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/LargeEquipments.css">
+
     <script>
-        /* Set the width of the side navigation to 250px */
+        // Set the width of the side navigation to 250px
         function openNav(id) {
             document.getElementById(id).style.width = "16.8rem";
         }
 
-        /* Set the width of the side navigation to 0 */
+        // Set the width of the side navigation to 0
         function closeNav(id) {
             document.getElementById(id).style.width = "0";
         }
+
+        // Close the side navigation when clicking outside
+        document.addEventListener('click', function (event) {
+            var menuSideBar = document.getElementById('menuSideBar');
+            var profileSideBar = document.getElementById('profileSideBar');
+            var targetElement = event.target; // clicked element
+
+            // Check if the clicked element is outside of the side navigation
+            if (targetElement != menuSideBar && targetElement != profileSideBar && !targetElement.classList.contains('headerNav')) {
+                closeNav('menuSideBar');
+                closeNav('profileSideBar');
+            }
+        });
+
     </script>
 </head>
 
@@ -43,6 +58,11 @@
             <div class="search-bar">
                 <input id="search" class="search" type="search" placeholder="🔍 Search FoodCraft">
             </div>
+            <span class="headerNav" style="border-style: none;">
+                <a style="color: #3e2e23;text-decoration: none;" href="../index.html">
+                    FoodCraft
+                </a>
+            </span>
             <span class="headerNav" id="profile"
                 onclick="openNav('profileSideBar');closeNav('menuSideBar')">Profile</span>
         </nav>

@@ -17,6 +17,19 @@
         function closeNav(id) {
             document.getElementById(id).style.width = "0";
         }
+
+        // Close the side navigation when clicking outside
+        document.addEventListener('click', function (event) {
+            var menuSideBar = document.getElementById('menuSideBar');
+            var profileSideBar = document.getElementById('profileSideBar');
+            var targetElement = event.target; // clicked element
+
+            // Check if the clicked element is outside of the side navigation
+            if (targetElement != menuSideBar && targetElement != profileSideBar && !targetElement.classList.contains('headerNav')) {
+                closeNav('menuSideBar');
+                closeNav('profileSideBar');
+            }
+        });
     </script>
 </head>
 
@@ -49,7 +62,7 @@
         </nav>
     </header>
 
-    <section class=" main" onclick="closeNav('menuSideBar');closeNav('profileSideBar')">
+    <section class=" main" >
         <div class="main-content">
             <h1>FoodCraft</h1>
             <p>Start Your Startup Resturant</p>

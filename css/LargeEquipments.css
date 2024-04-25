@@ -1,6 +1,7 @@
 body {
     background-color: #2c190a;
     text-align: center;
+    overflow-x: hidden;
 }
 
 header {
@@ -71,6 +72,7 @@ header {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+
     /* Adjust styles for smaller screens */
     .results {
         margin: 0 5%;
@@ -83,8 +85,27 @@ header {
 }
 
 @media screen and (max-width: 480px) {
+
     /* Adjust styles for even smaller screens */
     .results {
         margin: 0 2%;
     }
+}
+
+.search-bar {
+    display: contents;
+    /* Make the search bar take up available space */
+    text-align: center;
+    /* Center the input inside the search bar */
+}
+
+.search {
+    width: 30%;
+    /* Make the input take full width of search bar */
+    width: 400px;
+    /* Limit maximum width for responsiveness */
+    padding: 10px;
+    /* Add padding for better appearance */
+    border-style: none;
+    border-radius: 35px;
 }
