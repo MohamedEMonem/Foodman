@@ -34,7 +34,7 @@ header {
 
 .results {
     background-color: white;
-    margin: 6.8em 10% 0;
+    margin: 9.22em 10% 0;
     color: #2c190a;
     position: relative;
     display: flex;
@@ -122,4 +122,15 @@ header {
     object-fit: contain;
     cursor: pointer;
     margin-left: -2em;
+}
+
+#IH {
+    border-style: none;
+}
+
+#IH a {
+    margin-top: 4em;
+    border-style: none;
+    color: #3e2e23;
+    text-decoration: none;
 }
