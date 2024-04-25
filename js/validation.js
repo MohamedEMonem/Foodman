@@ -1,66 +1,51 @@
-function chkpass(event){
-pass1=document.getElementById("password").value
-pass2=document.getElementById("con-password").value
-var acceptedinput = /^[a-zA-Z0-9]+$/;
+function chkpass(event) {
+    var pass1 = document.getElementById("password").value;
+    var pass2 = document.getElementById("confirm-password").value;
+    var acceptedinput = /^[a-zA-Z0-9]+$/;
 
-if (pass1 == "") {
-    alert ("You did not enter a password \n" +
-           "Please enter one now");
-    pass1.focus();
-    event.preventDefault();
-    return false;
-  }
-else if(!acceptedinput.test(pass1)){
-    alert("illegal character used \nnumbers and letters only allowed")
-    pass1.focus();
-    pass1.select();
-    event.preventDefault();
-    return false;
-
-}
-else if(pass1.length<6){
-    alert("minimum 6 character!")
-    pass1.focus();
-    event.preventDefault();
-    return false;
-
-}
-
-else if(pass1 !== pass2){
-    alert("The two passwords are not the same \n" +
-    "Please re-enter both now")
-    pass1.focus();
-	pass1.select();
-    event.preventDefault();
-    return false;
-}
-else{
-return true
-}
-}
-function chkphone(event){
-    phone=document.getElementById("Phone").value;
-    let validinput
-    if()
-    if(phone.length!==11){
-        alert("phone number length should be 11 number")
+    if (pass1 === "") {
+        alert("You did not enter a password.\nPlease enter one now.");
+        document.getElementById("password").focus();
         event.preventDefault();
+        return false;
+    } else if (!acceptedinput.test(pass1)) {
+        alert("Illegal characters used.\nOnly numbers and letters are allowed.");
+        document.getElementById("password").focus();
+        document.getElementById("password").select();
+        event.preventDefault();
+        return false;
+    } else if (pass1.length < 6) {
+        alert("Minimum password length is 6 characters!");
+        document.getElementById("password").focus();
+        event.preventDefault();
+        return false;
+    } else if (pass1 !== pass2) {
+        alert("The two passwords do not match.\nPlease re-enter both.");
+        document.getElementById("password").focus();
+        document.getElementById("password").select();
+        event.preventDefault();
+        return false;
+    } else {
+        return true;
+    }
+}
 
-        phone.focus();
+function chkphone(event) {
+    var phone = document.getElementById("mobile-phone").value;
+    if (phone.length !== 11) {
+        alert("Phone number length should be 11 digits.");
+        return false; 
+    } else {
+        return true;
+    }
+}
+
+function formchk(event) {
+    var flag1 = chkpass(event);
+    var flag2 = chkphone(event);
+    if (flag1 && flag2) {
+        return true;
+    } else {
         return false;
     }
-    else{
-        return true
-    }
-}
-function formchk(event){
-    flage1=chkpass(event)
-    flage2=chkphone(event)
-
-    if(flage1&& flage2){
-        document.getElementById("signupform").action="../php/register.php"
-        return true;
-
-    }
-    else {return false}
 }

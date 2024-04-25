@@ -7,6 +7,7 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/signup.css">
+    <script src="../js/validation.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
 
     <section class="form">
         <p>Sign Up</p>
-        <form action="php/signup.php" method="POST">
+        <form action="../php/register.php" method="POST" onsubmit="return formchk(event);">
             <label for="first-name">First Name</label>
             <input class="name" type="text" name="first-name" id="first-name" required>
             <label for="last-name">Last Name</label>
@@ -29,9 +30,10 @@
             <label for="password">Password</label>
             <input type="password" name="password" id="password" required><br><br>
             <label for="confirm-password">Confirm Password</label>
-            <input class="CON-PASS" type="password" name="confirm-password" id="confirm-password" required><br><br>
+            <input class="CON-PASS" type="password" name="con-password" id="confirm-password" required
+                onblur="chkpass(event)"><br><br>
             <label for="mobile-phone">Mobile Phone</label>
-            <input type="tel" name="mobile-phone" id="mobile-phone" required><br><br>
+            <input type="tel" name="mobile-phone" id="mobile-phone" required onblur="chkphone(event);"><br><br>
             <button type="submit">Sign Up</button><br><br><br>
         </form>
         <a href="#">Need Help?</a>
