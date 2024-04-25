@@ -109,3 +109,17 @@ header {
     border-style: none;
     border-radius: 35px;
 }
+
+.arrow {
+    width: 100%;
+    position: fixed;
+    right: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 100%;
+    overflow: hidden;
+    height: 1.238rem;
+    object-fit: contain;
+    cursor: pointer;
+    margin-left: -2em;
+}
