@@ -10,7 +10,7 @@
     <script>
         /* Set the width of the side navigation to 250px */
         function openNav(id) {
-            document.getElementById(id).style.width = "250px";
+            document.getElementById(id).style.width = "16.8rem";
         }
 
         /* Set the width of the side navigation to 0 */
@@ -21,23 +21,24 @@
 </head>
 
 <body>
-    <div id="menuSideBar" class="menuSideBar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('menuSideBar')">&times;</a>
-        <a href="#">categories</a>
-        <hr>
-        <a href="#">large equipments</a>
-        <a href="#">small equipments</a>
-        <hr>
-        <a href="#">About us</a>
-        <a href="#">Contact</a>
-    </div>
-    <div id="profileSideBar" class="profileSideBar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('profileSideBar')">&times;</a>
-        <a href="#">Profile</a>
-        <a href="html/Login.html">sign in</a>
-        <a href="html/Signup.html">sing up</a>
-    </div>
+
     <header>
+        <div id="menuSideBar" class="menuSideBar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('menuSideBar')">&times;</a>
+            <a href="#">categories</a>
+            <hr>
+            <a href="html/LargeEquipments.html">Large Equipments</a>
+            <a href="#">Small Equipments</a>
+            <hr>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+        </div>
+        <div id="profileSideBar" class="profileSideBar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('profileSideBar')">&times;</a>
+            <a href="#">Profile</a>
+            <a href="html/Login.html">sign in</a>
+            <a href="html/Signup.html">sing up</a>
+        </div>
         <nav>
             <span class="headerNav" id="menu" onclick="openNav('menuSideBar');closeNav('profileSideBar')">Menu</span>
             <div class="search-bar">
