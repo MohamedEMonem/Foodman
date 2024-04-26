@@ -1,66 +1,65 @@
-function chkpass(event){
-pass1=document.getElementById("password").value
-pass2=document.getElementById("con-password").value
-var acceptedinput = /^[a-zA-Z0-9]+$/;
+const form = document.getElementById("signupform");
+const errormessage = document.getElementById("errormessage");
+const pass1 = document.getElementById("password");
+const pass2 = document.getElementById("confirmpassword");
+const phone = document.getElementById("mobilephone");
+const email = document.getElementById("email")
 
-if (pass1 == "") {
-    alert ("You did not enter a password \n" +
-           "Please enter one now");
-    pass1.focus();
+const acceptedPass = /^[a-zA-Z0-9]{8,}$/;
+const acceptedPhone = /^[0-9]{8}$/;
+const acceptedemail=/^[a-zA-Z-0-9\.-]+@[a-zA-Z-0-9]+\.[a-zA-Z]{2,8}$/;
+
+form.addEventListener("submit", function(event) {
+  let passwchk = false;
+  let phonechk = false;
+  let emailchk=false;
+
+  errormessage.textContent = "";
+  errormessage.style.visibility = "hidden";
+
+
+  if (pass1.value!== pass2.value) {
+    setError(pass1, "Passwords do not match");
+    setError(pass2, "Passwords do not match");
+    
+  } else if (!acceptedPass.test(pass1.value)) {
+    if (pass1.value.length < 8) {
+      setError(pass1, "Password should be more than 8 characters");
+    } else {
+      setError(pass1, "Enter letters [A-Z], and numbers [0-9] only");
+    }
+  } else {
+    passwchk = true;
+  }
+
+  // Phone number validation
+  if (!acceptedPhone.test(phone.value)) {
+    if(phone.value.length !== 8)
+      setError(phone,"phone number should be 8 numbers")
+    else
+    setError(phone, "Invalid phone number format");}
+   else {
+    phonechk = true;
+  }
+
+if(!acceptedemail.test(email.value)){
+  setError(email,"email invalid should \"be exmaple@example.com\" ")
+}
+else {
+  emailchk=true;
+} 
+
+
+  if (!(passwchk && phonechk && emailchk)) {
     event.preventDefault();
     return false;
   }
-else if(!acceptedinput.test(pass1)){
-    alert("illegal character used \nnumbers and letters only allowed")
-    pass1.focus();
-    pass1.select();
-    event.preventDefault();
-    return false;
+});
 
-}
-else if(pass1.length<6){
-    alert("minimum 6 character!")
-    pass1.focus();
-    event.preventDefault();
-    return false;
-
-}
-
-else if(pass1 !== pass2){
-    alert("The two passwords are not the same \n" +
-    "Please re-enter both now")
-    pass1.focus();
-	pass1.select();
-    event.preventDefault();
-    return false;
-}
-else{
-return true
-}
-}
-function chkphone(event){
-    phone=document.getElementById("Phone").value;
-    let validinput
-    if()
-    if(phone.length!==11){
-        alert("phone number length should be 11 number")
-        event.preventDefault();
-
-        phone.focus();
-        return false;
-    }
-    else{
-        return true
-    }
-}
-function formchk(event){
-    flage1=chkpass(event)
-    flage2=chkphone(event)
-
-    if(flage1&& flage2){
-        document.getElementById("signupform").action="../php/register.php"
-        return true;
-
-    }
-    else {return false}
+function setError(element, message) {
+  element.style.border = "2px solid red";
+  errormessage.textContent = message;
+  errormessage.style.visibility = "visible";
+  element.focus();
+  element.select();
 }

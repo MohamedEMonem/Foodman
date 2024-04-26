@@ -6,6 +6,12 @@
 #confirm-password {
     margin-left: 3em;
 }
+#errormessage{
+    color: rgb(180, 31, 31);
+    font-size: smaller;
+    visibility: hidden;
+    padding-top: 0;
+}
 
 section form input {
     margin-left: 7.3em;
