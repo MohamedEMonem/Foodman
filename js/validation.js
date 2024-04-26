@@ -6,7 +6,7 @@ const phone = document.getElementById("mobilephone");
 const email = document.getElementById("email")
 
 const acceptedPass = /^[a-zA-Z0-9]{8,}$/;
-const acceptedPhone = /^[0-9]{8}$/;
+const acceptedPhone = /^[0-9]{11}$/;
 const acceptedemail=/^[a-zA-Z-0-9\.-]+@[a-zA-Z-0-9]+\.[a-zA-Z]{2,8}$/;
 
 form.addEventListener("submit", function(event) {
@@ -25,25 +25,28 @@ form.addEventListener("submit", function(event) {
   } else if (!acceptedPass.test(pass1.value)) {
     if (pass1.value.length < 8) {
       setError(pass1, "Password should be more than 8 characters");
-    } else {
+    } 
+    else {
       setError(pass1, "Enter letters [A-Z], and numbers [0-9] only");
     }
   } else {
     passwchk = true;
   }
 
-  // Phone number validation
   if (!acceptedPhone.test(phone.value)) {
-    if(phone.value.length !== 8)
-      setError(phone,"phone number should be 8 numbers")
-    else
-    setError(phone, "Invalid phone number format");}
+    if(phone.value.length !== 11){
+      setError(phone,"phone number should be 11 numbers")
+    }
+    else{
+    setError(phone, "Invalid phone number format");
+    }
+  }
    else {
     phonechk = true;
   }
 
 if(!acceptedemail.test(email.value)){
-  setError(email,"email invalid should \"be exmaple@example.com\" ")
+  setError(email,"email invalid should be \"exmaple@example.com\" ")
 }
 else {
   emailchk=true;
