@@ -51,6 +51,7 @@ header {
     height: 10em;
     display: table-cell;
     margin: 3.4em auto;
+    cursor: pointer;
 }
 
 .products1,
