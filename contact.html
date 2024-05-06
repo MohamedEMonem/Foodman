@@ -5,42 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="contact.css">
-    <style>
-        /* Additional CSS styles for the contact form */
-        form {
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-        .error-message {
-            color: red;
-        }
-    </style>
 </head>
 <body>
     <nav>
@@ -94,7 +58,6 @@
                 errorMessage.innerHTML = "Please fill out all fields.";
                 event.preventDefault(); // Prevent form submission
             }
-            // You can add more advanced validation logic here, such as checking the email format
         });
     </script>
 </body>
