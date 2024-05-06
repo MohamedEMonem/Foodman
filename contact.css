@@ -44,6 +44,10 @@ nav ul li a {
     text-decoration: none;
     padding: 10px 20px;
 }
+.active {
+    background-color: #ffffff;
+}
+
 
 nav ul li a:hover {
     color: #ffd700;
@@ -51,8 +55,8 @@ nav ul li a:hover {
 
 /* Header */
 header {
-    background: #333;
-    color: #fff;
+    background: #fc7f09;
+    color: #000000;
     padding-top: 80px;
     min-height: 100px;
     border-bottom: #f4f4f4 3px solid;
