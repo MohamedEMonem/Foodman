@@ -22,7 +22,7 @@ body {
 
 /* Navigation */
 nav {
-    background: #fc7f09;
+    background: #444444;
     color: #fff;
     padding-top: 10px;
     overflow: hidden;
@@ -36,16 +36,18 @@ nav ul {
 
 nav ul li {
     float: left;
+    display: inline;
+
 }
 
 nav ul li a {
     display: block;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
 }
 .active {
-    background-color: #ffffff;
+    background-color: #fc7f09;
 }
 
 

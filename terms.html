@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Services</title>
+    <link rel="stylesheet" href="terms.css">
+    <style>
+        /* Additional CSS styles specific to the terms and services page */
+        .terms-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .section-content p {
+            margin-bottom: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Terms and Services</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="terms_and_services.html" class="active">Terms and Services</a>
+    </nav>
+
+    <div class="container">
+        <div class="terms-container">
+            <h2 class="section-title">Introduction</h2>
+            <div class="section-content">
+                <p>Welcome to our Terms and Services page. This page outlines the terms and conditions ("Terms") governing the use of our website and any associated services provided by us. By accessing our website, you agree to comply with these Terms. If you do not agree with any part of these Terms, please do not use our website.</p>
+            </div>
+
+            <button class="toggle-btn">Toggle User Conduct</button>
+            <div class="section-content hidden user-conduct">
+                <h2 class="section-title">User Conduct</h2>
+                <p>In using our website, you agree not to engage in any prohibited activities, including but not limited to:</p>
+                <ul>
+                    <li>Violating any applicable laws or regulations</li>
+                    <li>Infringing upon the rights of others</li>
+                    <li>Posting or transmitting any unlawful, defamatory, obscene, or offensive content</li>
+                    <li>Interfering with the proper functioning of the website</li>
+                </ul>
+            </div>
+
+            <button class="toggle-btn">Toggle Privacy Policy</button>
+            <div class="section-content hidden privacy-policy">
+                <h2 class="section-title">Privacy Policy</h2>
+                <p>We are committed to protecting your privacy. Our Privacy Policy outlines how we collect, use, and disclose information about you. By using our website, you consent to the practices described in our Privacy Policy.</p>
+            </div>
+
+            <button class="toggle-btn">Toggle Intellectual Property Rights</button>
+            <div class="section-content hidden intellectual-property">
+                <h2 class="section-title">Intellectual Property Rights</h2>
+                <p>All content included on this website, such as text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of our company or its content suppliers and is protected by international copyright laws.</p>
+            </div>
+
+            <!-- Add more toggle buttons and sections as needed -->
+
+            <button class="toggle-btn">Toggle Disclaimer</button>
+            <div class="section-content hidden disclaimer">
+                <h2 class="section-title">Disclaimer</h2>
+                <p>The information provided on this website is for general informational purposes only. We make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose.</p>
+            </div>
+
+            <button class="toggle-btn">Toggle Governing Law</button>
+            <div class="section-content hidden governing-law">
+                <h2 class="section-title">Governing Law</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of [Your Country], without regard to its conflict of law provisions.</p>
+            </div>
+
+            <!-- Add more toggle buttons and sections as needed -->
+
+            <!-- Add more content to make the page longer -->
+            <!-- You can copy and paste the existing content and modify it as needed -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle section visibility
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const section = button.nextElementSibling;
+                section.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
