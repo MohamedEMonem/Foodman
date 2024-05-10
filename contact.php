@@ -18,8 +18,14 @@
             echo 'Message is too long.';
             exit;
         }
-
-        $sql = "INSERT INTO contact (name, email, message) VALUES(?,?,?)";
+        // create contact table first 
+        /* create table contact (
+            name varchr(64),
+            email varchar(32),
+            message varchar(255)
+            );
+        */
+        $sql = "INSERT INTO contact (name, email, message) VALUES(?,?,?)"; 
         $stmtinsert = $conn->prepare($sql);
         $result = $stmtinsert->execute([$name, $email, $message]);
         if($result){
