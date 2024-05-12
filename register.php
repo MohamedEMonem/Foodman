@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit;
     }
 
-    $sql = "SELECT email FROM users WHERE email = '$email'";
+    $sql = "SELECT email,phone FROM users WHERE email = '$email' OR phone = '$phone'";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         echo 'Email already exists.';
