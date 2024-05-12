@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+try {
+    if ($_SESSION['Logged']) {
+        header("Location: notFound.html");
+        exit; // Make sure to exit after redirection
+    }
+} catch (Exception $e) {
+    // Handle exceptions if needed
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +21,7 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="signup.css">
-    
+
 </head>
 
 <body>
