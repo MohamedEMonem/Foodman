@@ -18,11 +18,11 @@ section form input {
 }
 
 #email {
-    margin-left: 12.6em;
+    margin-left: 0.1em;
 }
 
 #password {
-    margin-left: 9.8em;
+    margin-left: 0.1em;
 }
 
 #mobile-phone {
@@ -58,5 +58,5 @@ section form input {
 }
 
 #confirmpassword {
-    margin-left: 5em ;
+    margin-left: 0.1em ;
 }
