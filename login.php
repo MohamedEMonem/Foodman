@@ -7,12 +7,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_SPECIAL_CHARS);
 
     if (empty($email) || empty($password)) {
-        echo 'Please fill out all fields.';
+        header("Location: loginPage.php?error=emptyfields");
         exit;
     }
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo 'Invalid email format.';
+        header("Location: loginPage.php?error=invalidemail");
         exit;
     }
 
@@ -30,13 +30,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['Logged'] = true;
             $_SESSION['phone'] = $phone;
             header("Location: index.html");
+            exit; // Ensure script stops here after redirect
         } else {
-            echo 'Invalid email or password.';
-            header("Location: login.html");
+            header("Location: loginPage.php?error=password incorrect");
+            exit;
         }
     } else {
-        echo 'User not found.';
-        header("Location: login.html");
+        header("Location: loginPage.php?error=email not found");
+        exit;
     }
 
     $stmt->close(); // Close the statement

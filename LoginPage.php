@@ -33,6 +33,12 @@ try {
                 <input type="email" name="email" id="email" required><br><br>
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" required><br><br><br>
+                <?php
+                if (isset($_GET['error'])) {
+
+                    echo "<p class=\"error\" style=\"color: red;\"><strong>{$_GET['error']}</strong></p>";
+                }
+                ?>
                 <button type="submit">Login</button><br><br><br>
             </form>
             <a href="#">Need Help?</a>
