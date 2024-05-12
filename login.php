@@ -13,8 +13,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit;
     }
 
-    $sql = "SELECT * FROM users where email = $email";
+    $sql = "SELECT email , password FROM users where email = $email";
     
+    while(){
+
+    }
 
 
     header("Location: index.html");
