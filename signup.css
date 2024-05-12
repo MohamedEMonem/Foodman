@@ -1,0 +1,62 @@
+.name {
+    width: 25%;
+    margin-left: 8.5em;
+}
+
+#confirm-password {
+    margin-left: 3em;
+}
+#errormessage{
+    color: rgb(180, 31, 31);
+    font-size: smaller;
+    visibility: hidden;
+    padding-top: 0;
+}
+
+section form input {
+    margin-left: 7.3em;
+}
+
+#email {
+    margin-left: 12.6em;
+}
+
+#password {
+    margin-left: 9.8em;
+}
+
+#mobile-phone {
+    margin-left: 6.8em;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .name {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #confirm-password {
+        margin-left: 0;
+    }
+
+    section form input {
+        margin-left: 0;
+    }
+
+    #email {
+        margin-left: 0;
+    }
+
+    #password {
+        margin-left: 0;
+    }
+
+    #mobile-phone {
+        margin-left: 0;
+    }
+}
+
+#confirmpassword {
+    margin-left: 5em ;
+}
