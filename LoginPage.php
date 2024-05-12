@@ -3,7 +3,7 @@ session_start();
 
 try {
     if (isset($_SESSION['Logged']) && $_SESSION['Logged']) {
-        header("Location: notFound.html");
+        header("Location: menu.html");
         exit; // Make sure to exit after redirection
     }
 } catch (Exception $e) {

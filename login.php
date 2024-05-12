@@ -28,6 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if (password_verify($password, $row['password']) && $email == $row['email']) {
             $_SESSION['Logged'] = true;
+            $_SESSION['phone'] = $phone;
             header("Location: index.html");
         } else {
             echo 'Invalid email or password.';

@@ -39,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $conn->query($sql);
 
     $_SESSION['Logged'] = true;
+    $_SESSION['phone'] = $phone;
     header("Location: index.html");
 } else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     header("Location: register.html");
