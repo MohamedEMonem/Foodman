@@ -36,7 +36,7 @@ try {
             </form>
             <a href="#">Need Help?</a>
             <hr>
-            <a class="CNA" href="Signup.html">Create New Account</a>
+            <a class="CNA" href="Signup.php">Create New Account</a>
             <br><br>
         </section>
 
