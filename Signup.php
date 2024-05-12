@@ -2,7 +2,7 @@
 session_start();
 
 try {
-    if ($_SESSION['Logged']) {
+    if (isset($_SESSION['Logged']) && $_SESSION['Logged']) {
         header("Location: notFound.html");
         exit; // Make sure to exit after redirection
     }
@@ -10,6 +10,7 @@ try {
     // Handle exceptions if needed
 }
 ?>
+
 
 
 <!DOCTYPE html>
@@ -64,7 +65,7 @@ try {
 
         <a href="#">Need Help?</a>
         <hr>
-        <a class="CNA" href="Login.html">Already have an account? Login</a>
+        <a class="CNA" href="LoginPage.php">Already have an account? Login</a>
         <br><br>
         <br><br>
     </section>

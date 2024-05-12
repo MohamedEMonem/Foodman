@@ -2,7 +2,7 @@
 session_start();
 
 try {
-    if ($_SESSION['Logged']) {
+    if (isset($_SESSION['Logged']) && $_SESSION['Logged']) {
         header("Location: notFound.html");
         exit; // Make sure to exit after redirection
     }
@@ -10,6 +10,7 @@ try {
     // Handle exceptions if needed
 }
 ?>
+
 
 
 <!-- Your HTML code here -->
