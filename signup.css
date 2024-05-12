@@ -2,6 +2,11 @@
     width: 25%;
     margin-left: 8.5em;
 }
+#foodman{
+    text-align: center;
+    text-decoration: none;
+    
+}
 
 #confirm-password {
     margin-left: 3em;
