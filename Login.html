@@ -1,19 +1,30 @@
 <div class="login-page">
     <link rel="stylesheet" href="login.css">
-    <div class="form">
-      <form class="register-form">
-        <input type="text" placeholder="name"/>
-        <input type="password" placeholder="password"/>
-        <input type="text" placeholder="email address"/>
-        <button>create</button>
-        <p class="message">Already registered? <a href="#">Sign In</a></p>
-      </form>
-      <form class="login-form">
-        <input type="text" placeholder="username"/>
-        <input type="password" placeholder="password"/>
-        <button>login</button>
-        <p class="message">Not registered? <a href="Signup.html">Create an account</a></p>
-        <script src="validation.js"></script>
-      </form>
-    </div>
-  </div>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1>FoodMan</h1>
+        </a>
+    </header>
+
+    <section class="form">
+        <p>Sign In</p>
+        <form action="login.php" method="POST">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required><br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required><br><br><br>
+            <button type="submit">Login</button><br><br><br>
+        </form>
+        <a href="#">Need Help?</a>
+        <hr>
+        <a class="CNA" href="Signup.html">Create New Account</a>
+        <br><br>
+    </section>
+
+</body>
+
+</html>
