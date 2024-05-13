@@ -1,78 +1,34 @@
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* terms styles */
+
+.container_terms {
+    padding: 200px;
 }
 
-.header {
-    background-color: #fc7f09;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.navbar {
-    background-color: #444;
-    overflow: hidden;
-}
-
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-.navbar a.active {
-    background-color: #fc7f09;
-}
-
-.container {
-    padding: 20px;
-}
-
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
 
 /* Additional styles specific to the terms and services page */
-.terms-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+.section-title_terms {
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: #18181b;
 }
 
-.section-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.section-content {
+.section-content_terms {
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     color: #555;
 }
 
-.section-content p {
+.section-content_terms p {
     margin-bottom: 10px;
 }
 
-.hidden {
+.hidden_terms {
     display: none;
 }
 
-.toggle-btn {
+.toggle-btn_terms {
     background-color: #fc7f09;
     color: white;
     border: none;
@@ -83,6 +39,14 @@ body {
     margin-bottom: 10px;
 }
 
-.toggle-btn:hover {
+.toggle-btn_terms:hover {
     background-color: #e36200;
+}
+
+.terms-container {
+    background-color: rgb(249, 249, 249);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 10px;
 }

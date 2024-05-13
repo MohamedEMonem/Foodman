@@ -1,3 +1,4 @@
+
 /* Reset CSS */
 * {
     margin: 0;
@@ -5,14 +6,13 @@
     box-sizing: border-box;
 }
 
-/* Global Styles */
+/* allergy Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     color: #333;
     line-height: 1.6;
     margin: 0;
-    height: 100vh; /* Ensure full viewport height */
+    height: 100vh;
 }
 
 .container {
@@ -22,61 +22,25 @@ body {
     overflow: hidden;
 }
 
-.header {
-    background-color: #fc7f09;
-    color: #000000;
-    padding: 20px;
-    text-align: center;
-}
-
-.navbar {
-    background-color: #fc7f09;
-    overflow: hidden;
-}
-
-.navbar a {
-    float: left;
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    color: #ffd700;
-}
-
-.active {
-    background-color: #ffffff;
-    color: #333;
-}
-
 .content {
     padding: 20px;
 }
 
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
 
-/* Specific Styles for Allergen Information Page */
+
 .allergen-info {
     padding: 20px;
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Fill entire width */
-    max-width: 960px; /* Limit width for larger screens */
-    margin: auto; /* Center horizontally */
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
     margin-top: 20px;
 }
 
 .allergen-info h2 {
     margin-bottom: 20px;
+    color:#18181b;
+    font-size: 50px;
 }
 
 .allergen-info p {
