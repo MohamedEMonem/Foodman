@@ -42,7 +42,7 @@ try {
                     if ($error == 'email') {
                         echo "<p class=\"error\" style=\"color: red;\"><strong>Email not found</strong></p>";
                     } elseif ($error == 'password') {
-                        echo "<p class=\"error\" style=\"color: red;\"><strong>{$error}</strong></p>";
+                        echo "<p class=\"error\" style=\"color: red;\"><strong>Invaild Password</strong></p>";
                     } elseif ($error == 'emptyfields') {
                         echo "<p class=\"error\" style=\"color: red;\"><strong>Fill in all fields</strong></p>";
                     } elseif ($error == 'invalidemail') {
