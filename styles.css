@@ -49,11 +49,25 @@
   transition: 0.3s;
   cursor: pointer;
 }
+  .ll {
+    text-decoration: none;
+    background-color: #fc7f09; /* Red background color */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* No border */
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin-left: 10px;
+}
+
+
 
 .btn:hover {
   background-color: var(--primary-color-dark);
 }
-
+.ll:hover {
+  background-color: var(--primary-color-dark);
+}
 .logo a {
   font-size: 1.5rem;
   font-weight: 700;
@@ -144,9 +158,9 @@ nav {
   color: var(--text-dark);
 }
 
-.nav__btn {
+ .nav__btn {
   display: none;
-}
+} 
 
 .header__container {
   display: grid;
