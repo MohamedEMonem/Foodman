@@ -15,15 +15,18 @@ try {
 
 <!-- Your HTML code here -->
 <div class="login-page">
-    <link rel="stylesheet" href="login.css">
+
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="login.css">
     </head>
 
     <body>
 
         <header>
-            <a href="index.html">
-                <h1>FoodMan</h1>
-            </a>
+            <div class="logo nav__logo">
+                <a href="index.html">Food<span>man</span></a>
+            </div>
         </header>
 
         <section class="form">
