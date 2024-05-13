@@ -1,4 +1,3 @@
-
 /* terms styles */
 
 .container_terms {
@@ -43,10 +42,11 @@
 .toggle-btn_terms:hover {
     background-color: #e36200;
 }
+
 .terms-container {
-  background-color: rgb(249, 249, 249);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
-  margin: 0px auto;
-  padding: 20px;
-  border-radius: 10px;
+    background-color: rgb(249, 249, 249);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 10px;
 }
