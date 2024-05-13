@@ -39,6 +39,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header("Location: loginPage.php?error=email");
         exit;
     }
-
-    $stmt->close(); // Close the statement
 }
