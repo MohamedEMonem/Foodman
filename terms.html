@@ -1,62 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Services</title>
-    <link rel="stylesheet" href="terms.css">
-    <style>
-        /* Additional CSS styles specific to the terms and services page */
-        .terms-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .section-title {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .section-content {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .section-content p {
-            margin-bottom: 10px;
-        }
-
-        .hidden {
-            display: none;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="terms.css" />
 </head>
-<body>
-    <header class="header">
-        <h1>Terms and Services</h1>
-    </header>
 
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="terms_and_services.html" class="active">Terms and Services</a>
+<body>
+    <nav>
+      <div class="nav__header">
+        <div class="logo nav__logo">
+          <a href="#">Food<span>man</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Special</a></li>
+        <li><a href="index.html">Chef</a></li>
+        <li><a href="index.html">Clients</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+  
+      <div class="nav__btn">
+        <button class="btn" title="Shopping Bag"><i class="ri-shopping-bag-fill"></i></button>
+        <a href="logout.php" class="logout-button"><button class="ll">Logout</button></a>
+      </div>
     </nav>
 
-    <div class="container">
+    <div class="container_terms">
         <div class="terms-container">
-            <h2 class="section-title">Introduction</h2>
-            <div class="section-content">
+            <h2 class="section-title_terms">Introduction</h2>
+            <div class="section-content_terms">
                 <p>Welcome to our Terms and Services page. This page outlines the terms and conditions ("Terms") governing the use of our website and any associated services provided by us. By accessing our website, you agree to comply with these Terms. If you do not agree with any part of these Terms, please do not use our website.</p>
             </div>
 
-            <button class="toggle-btn">Toggle User Conduct</button>
-            <div class="section-content hidden user-conduct">
+            <button class="toggle-btn_terms">User Conduct</button>
+            <div class="section-content_terms hidden_terms user-conduct">
                 <h2 class="section-title">User Conduct</h2>
                 <p>In using our website, you agree not to engage in any prohibited activities, including but not limited to:</p>
                 <ul>
@@ -67,49 +54,88 @@
                 </ul>
             </div>
 
-            <button class="toggle-btn">Toggle Privacy Policy</button>
-            <div class="section-content hidden privacy-policy">
+            <button class="toggle-btn_terms">Privacy Policy</button>
+            <div class="section-content_terms hidden_terms privacy-policy">
                 <h2 class="section-title">Privacy Policy</h2>
                 <p>We are committed to protecting your privacy. Our Privacy Policy outlines how we collect, use, and disclose information about you. By using our website, you consent to the practices described in our Privacy Policy.</p>
             </div>
 
-            <button class="toggle-btn">Toggle Intellectual Property Rights</button>
-            <div class="section-content hidden intellectual-property">
+            <button class="toggle-btn_terms">Intellectual Property Rights</button>
+            <div class="section-content_terms hidden_terms intellectual-property">
                 <h2 class="section-title">Intellectual Property Rights</h2>
                 <p>All content included on this website, such as text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of our company or its content suppliers and is protected by international copyright laws.</p>
             </div>
 
-            <!-- Add more toggle buttons and sections as needed -->
-
-            <button class="toggle-btn">Toggle Disclaimer</button>
-            <div class="section-content hidden disclaimer">
+            <button class="toggle-btn_terms">Disclaimer</button>
+            <div class="section-content_terms hidden_terms disclaimer">
                 <h2 class="section-title">Disclaimer</h2>
                 <p>The information provided on this website is for general informational purposes only. We make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose.</p>
             </div>
 
-            <button class="toggle-btn">Toggle Governing Law</button>
-            <div class="section-content hidden governing-law">
+            <button class="toggle-btn_terms">Governing Law</button>
+            <div class="section-content_terms hidden_terms governing-law">
                 <h2 class="section-title">Governing Law</h2>
                 <p>These Terms shall be governed by and construed in accordance with the laws of [Your Country], without regard to its conflict of law provisions.</p>
             </div>
 
             <!-- Add more toggle buttons and sections as needed -->
 
-            <!-- Add more content to make the page longer -->
-            <!-- You can copy and paste the existing content and modify it as needed -->
         </div>
     </div>
 
-    <footer class="footer">
-        <p>&copy; 2024 Company Name. All rights reserved.</p>
-    </footer>
+
+    <footer class="footer" id="contact">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <div class="logo footer__logo">
+              <a href="#">Food<span>man</span></a>
+            </div>
+            <p class="section__description">
+              Embark on a gastronomic journey with FoodMan, where every bite tells
+              a story and every dish is crafted to perfection.
+            </p>
+          </div>
+          <div class="footer__col">
+            <h4>Product</h4>
+            <ul class="footer__links">
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="index.html">Specials</a></li>
+              <li><a href="index.html">Meal Deals</a></li>
+              <li><a href="index.html">Catering Options</a></li>
+              <li><a href="index.html">Seasonal Offerings</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Information</h4>
+            <ul class="footer__links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="allergy.html">Allergen Information</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Company</h4>
+            <ul class="footer__links">
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2024 Web Design Mastery. All rights reserved.
+        </div>
+      </footer>
+    
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="main.js"></script>
 
     <script>
         // JavaScript to toggle section visibility
-        document.querySelectorAll('.toggle-btn').forEach(button => {
+        document.querySelectorAll('.toggle-btn_terms').forEach(button => {
             button.addEventListener('click', () => {
                 const section = button.nextElementSibling;
-                section.classList.toggle('hidden');
+                section.classList.toggle('hidden_terms');
             });
         });
     </script>
