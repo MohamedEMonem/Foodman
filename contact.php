@@ -2,9 +2,9 @@
     require_once('config.php');
     
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+        $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
         $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-        $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+        $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_SPECIAL_CHARS);
 
         if(empty($name) || empty($email) || empty($message)){
             echo 'Please fill out all fields.';
