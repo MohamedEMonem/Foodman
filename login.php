@@ -32,11 +32,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             header("Location: index.html");
             exit; // Ensure script stops here after redirect
         } else {
-            header("Location: loginPage.php?error=password incorrect");
+            header("Location: loginPage.php?error=password");
             exit;
         }
     } else {
-        header("Location: loginPage.php?error=email not found");
+        header("Location: loginPage.php?error=email");
         exit;
     }
 
