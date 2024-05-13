@@ -24,7 +24,7 @@ body {
 nav {
     background: #444444;
     color: #fff;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     overflow: hidden;
 }
 
@@ -75,6 +75,7 @@ header h1 {
     padding-top: 40px;
     padding-bottom: 20px;
     text-align: center;
+    border-bottom: 10px;
 }
 
 .section__container {
