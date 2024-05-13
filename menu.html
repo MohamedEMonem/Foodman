@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
     <style>
         /* Basic styling */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -35,7 +37,6 @@
 
         /* Basic styling */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -83,9 +84,29 @@
 </head>
 
 <body>
-    <header>
-        <h1>Restaurant Name</h1>
-    </header>
+    <nav>
+        <div class="nav__header">
+            <div class="logo nav__logo">
+                <a href="#">Food<span>man</span></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <span><i class="ri-menu-line"></i></span>
+            </div>
+        </div>
+
+        <ul class="nav__links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Special</a></li>
+            <li><a href="index.html">Chef</a></li>
+            <li><a href="index.html">Clients</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="nav__btn">
+            <button class="btn" title="Shopping Bag"><i class="ri-shopping-bag-fill"></i></button>
+            <a href="logout.php" class="logout-button"><button class="ll">Logout</button></a>
+        </div>
+    </nav>
     <section>
         <h2>Menu</h2>
         <div class="menu-item">
@@ -102,9 +123,53 @@
         </div>
         <!-- Add more menu items here -->
     </section>
-    <footer>
-        <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
+
+    <footer class="footer" id="contact">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="logo footer__logo">
+                    <a href="#">Food<span>man</span></a>
+                </div>
+                <p class="section__description">
+                    Embark on a gastronomic journey with FoodMan, where every bite tells
+                    a story and every dish is crafted to perfection.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4>Product</h4>
+                <ul class="footer__links">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="index.html">Specials</a></li>
+                    <li><a href="index.html">Meal Deals</a></li>
+                    <li><a href="index.html">Catering Options</a></li>
+                    <li><a href="index.html">Seasonal Offerings</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Information</h4>
+                <ul class="footer__links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="allergy.html">Allergen Information</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Company</h4>
+                <ul class="footer__links">
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2024 Web Design Mastery. All rights reserved.
+        </div>
     </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
 </body>
 
 </html>
