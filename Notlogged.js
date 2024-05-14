@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 document.getElementById('email').textContent = data.email;
                 document.getElementById('name').textContent = data.name;
+                document.getElementById('MenuName').textContent = data.name;
                 document.getElementById('phone').textContent = data.phone;
                 document.getElementById('created_at').textContent = new Date(data.created_at).toLocaleString();
             }
