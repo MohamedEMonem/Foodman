@@ -22,7 +22,7 @@
         <span><i class="ri-menu-line"></i></span>
       </div>
     </div>
-    
+
     <ul class="nav__links" id="nav-links">
       <li><a href="index.html#home">Home</a></li>
       <li><a href="index.html#special">Special</a></li>
@@ -32,120 +32,123 @@
     </ul>
 
     <div class="nav__btn">
-      <button class="btn" title="Shopping Bag"><i class="ri-shopping-bag-fill"></i></button>
-      <img src="assets/user.png" class="user" onclick="toggleMenu()">
-             <div class="sub-menu-wrap" id="subMenu">
-                <div class="sub-menu">
-                    <div class="user-info">
-                         <img src="assets/user.png">
-                         <h2><span id="name"></span></h2>
-                    </div>
-                     <hr>
-                    <a href="profile.html" class="sub-menu-link">
-                     <img src="assets/profile.png">
-                     <p>Profile</p>
-                    <span>></span>
+      <button class="btn" title="Shopping Bag" ><i class="ri-shopping-bag-fill"></i></button>
+      <img src="assets/user.png" class="user" onclick="fetch_user_data(),toggleMenu()">
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="assets/user.png">
+            <h2><span id="name"></span></h2>
+          </div>
+          <hr>
+          <a href="profile.html" class="sub-menu-link">
+            <img src="assets/profile.png">
+            <p>Profile</p>
+            <span>></span>
 
-                     <a href="contact.html" class="sub-menu-link">
-                         <img src="assets/help.png">
-                         <p>Contact Us</p>
-                         <span>></span>
-                     </a>
-                     <a href="logout.php" class="sub-menu-link">
-                         <img src="assets/logout.png">
-                         <p>Logout</p>
-                         <span>></span>
-                     </a>
-                    </div>
-               </div>
-            </div>
+            <a href="contact.html" class="sub-menu-link">
+              <img src="assets/help.png">
+              <p>Contact Us</p>
+              <span>></span>
+            </a>
+            <a href="logout.php" class="sub-menu-link">
+              <img src="assets/logout.png">
+              <p>Logout</p>
+              <span>></span>
+            </a>
+        </div>
+      </div>
+    </div>
 
   </nav>
 
-    <!-- About Us Section -->
-    <section class="section__container1">
-        <h2 class="section__header">About Us</h2>
-        <div class="section__content">
-            <p>Welcome to FoodMan, where passion meets flavor!</p>
-            <p>Founded in 20XX, FoodMan has been dedicated to providing exquisite culinary experiences to our customers.</p>
-            <p>Our mission is to create unforgettable dining experiences by combining the freshest ingredients, expert culinary techniques, and innovative recipes.</p>
-            <p>At FoodMan, we believe in the power of food to bring people together. Whether it's a family gathering, a romantic dinner, or a casual meal with friends, we strive to make every moment special.</p>
-        </div>
-    </section>
+  <!-- About Us Section -->
+  <section class="section__container1">
+    <h2 class="section__header">About Us</h2>
+    <div class="section__content">
+      <p>Welcome to FoodMan, where passion meets flavor!</p>
+      <p>Founded in 20XX, FoodMan has been dedicated to providing exquisite culinary experiences to our customers.</p>
+      <p>Our mission is to create unforgettable dining experiences by combining the freshest ingredients, expert
+        culinary techniques, and innovative recipes.</p>
+      <p>At FoodMan, we believe in the power of food to bring people together. Whether it's a family gathering, a
+        romantic dinner, or a casual meal with friends, we strive to make every moment special.</p>
+    </div>
+  </section>
 
-    <!-- Team Section -->
-    <section class="section__container1">
-        <h2 class="section__header">Our Team</h2>
-        <div class="section__content">
-            <div class="team-member">
-                <img src="assets/John Doe.png" alt="John Doe">
-                <h3>John Doe</h3>
-                <p>Head Chef</p>
-            </div>
-            <div class="team-member">
-                <img src="assets/Jane Smith.jpg" alt="Jane Smith">
-                <h3>Jane Smith</h3>
-                <p>Pastry Chef</p>
-            </div>
-            <div class="team-member">
-                <img src="assets/Michael Johnson.png" alt="Michael Johnson">
-                <h3>Michael Johnson</h3>
-                <p>Restaurant Manager</p>
-            </div>
-        </div>
-    </section>
+  <!-- Team Section -->
+  <section class="section__container1">
+    <h2 class="section__header">Our Team</h2>
+    <div class="section__content">
+      <div class="team-member">
+        <img src="assets/John Doe.png" alt="John Doe">
+        <h3>John Doe</h3>
+        <p>Head Chef</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/Jane Smith.jpg" alt="Jane Smith">
+        <h3>Jane Smith</h3>
+        <p>Pastry Chef</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/Michael Johnson.png" alt="Michael Johnson">
+        <h3>Michael Johnson</h3>
+        <p>Restaurant Manager</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="section__container footer__container">
-          <div class="footer__col">
-            <div class="logo footer__logo">
-              <a href="#">Food<span>man</span></a>
-            </div>
-            <p class="section__description">
-              Embark on a gastronomic journey with FoodMan, where every bite tells
-              a story and every dish is crafted to perfection.
-            </p>
-          </div>
-          <div class="footer__col">
-            <h4>Product</h4>
-            <ul class="footer__links">
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="index.html">Specials</a></li>
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="logo footer__logo">
+          <a href="#">Food<span>man</span></a>
+        </div>
+        <p class="section__description">
+          Embark on a gastronomic journey with FoodMan, where every bite tells
+          a story and every dish is crafted to perfection.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>Product</h4>
+        <ul class="footer__links">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="index.html">Specials</a></li>
 
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h4>Information</h4>
-            <ul class="footer__links">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="allergy.html">Allergen Information</a></li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h4>Company</h4>
-            <ul class="footer__links">
-              <li><a href="terms.html">Terms of Service</a></li>
-              <li><a href="privacy.html">Privacy Policy</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__bar">
-          Copyright © 2024 Web Design Mastery. All rights reserved.
-        </div>
-      </footer>
-    
-      <script src="fetch_user_data.js"></script> 
-      <script src="https://unpkg.com/scrollreveal"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="main.js"></script>
-      <script>
-        let subMenu = document.getElementById("subMenu");
-        function toggleMenu(){
-             subMenu.classList.toggle("open-menu");
-        }
-      </script>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Information</h4>
+        <ul class="footer__links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="allergy.html">Allergen Information</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul class="footer__links">
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Web Design Mastery. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="fetch_user_data.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    let subMenu = document.getElementById("subMenu");
+    function toggleMenu() {
+      subMenu.classList.toggle("open-menu");
+    }
+  </script>
 
 </body>
+
 </html>

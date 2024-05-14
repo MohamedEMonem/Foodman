@@ -105,12 +105,12 @@
     
         <div class="nav__btn">
           <button class="btn" title="Shopping Bag"><i class="ri-shopping-bag-fill"></i></button>
-          <img src="assets/user.png" class="user" onclick="toggleMenu()">
+          <img src="assets/user.png" class="user" onclick="fetch_user_data(),toggleMenu()">
                  <div class="sub-menu-wrap" id="subMenu">
                     <div class="sub-menu">
                         <div class="user-info">
                              <img src="assets/user.png">
-                             <h2>Freddie Mercury</h2>
+                             <h2><span id="name"></span></h2>
                         </div>
                          <hr>
                         <a href="profile.html" class="sub-menu-link">
@@ -159,9 +159,6 @@
 
     <footer>
         <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
-<<<<<<< HEAD
-=======
-=======
 
     <footer class="footer" id="contact">
         <div class="section__container footer__container">
@@ -201,8 +198,6 @@
         <div class="footer__bar">
             Copyright © 2024 Web Design Mastery. All rights reserved.
         </div>
->>>>>>> 0ae262b3d078b867cacb9e8bf70db7a35941f47c
->>>>>>> f72657c09362e98f1287663573c7b9e7585edc89
     </footer>
 
     <script src="fetch_user_data.js"></script> 

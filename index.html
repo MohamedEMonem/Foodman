@@ -21,7 +21,7 @@
         <span><i class="ri-menu-line"></i></span>
       </div>
     </div>
-    
+
     <ul class="nav__links" id="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#special">Special</a></li>
@@ -32,32 +32,32 @@
 
     <div class="nav__btn">
       <button class="btn" title="Shopping Bag"><i class="ri-shopping-bag-fill"></i></button>
-      <img src="assets/user.png" class="user" onclick="toggleMenu()">
-             <div class="sub-menu-wrap" id="subMenu">
-                <div class="sub-menu">
-                    <div class="user-info">
-                         <img src="assets/user.png">
-                         <h2><span id="name"></span></h2>
-                    </div>
-                     <hr>
-                    <a href="profile.html" class="sub-menu-link">
-                     <img src="assets/profile.png">
-                     <p>Profile</p>
-                    <span>></span>
+      <img src="assets/user.png" class="user" onclick="fetch_user_data(),toggleMenu()">
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="assets/user.png">
+            <h2><span id="name"></span></h2>
+          </div>
+          <hr>
+          <a href="profile.html" class="sub-menu-link">
+            <img src="assets/profile.png">
+            <p>Profile</p>
+            <span>></span>
 
-                     <a href="contact.html" class="sub-menu-link">
-                         <img src="assets/help.png">
-                         <p>Contact Us</p>
-                         <span>></span>
-                     </a>
-                     <a href="logout.php" class="sub-menu-link">
-                         <img src="assets/logout.png">
-                         <p>Logout</p>
-                         <span>></span>
-                     </a>
-                    </div>
-               </div>
-            </div>
+            <a href="contact.html" class="sub-menu-link">
+              <img src="assets/help.png">
+              <p>Contact Us</p>
+              <span>></span>
+            </a>
+            <a href="logout.php" class="sub-menu-link">
+              <img src="assets/logout.png">
+              <p>Logout</p>
+              <span>></span>
+            </a>
+        </div>
+      </div>
+    </div>
 
   </nav>
   <header class="section__container header__container" id="home">
@@ -71,7 +71,7 @@
         savor the authentic flavors that define our passion for food.
       </p>
       <div class="header__btn">
-       <a href="LoginPage.php"> <button class="btn">Get Started</button></a>
+        <a href="LoginPage.php"> <button class="btn">Get Started</button></a>
       </div>
     </div>
   </header>
@@ -326,14 +326,14 @@
     </div>
   </footer>
 
-  <script src="fetch_user_data.js"></script> 
+  <script src="fetch_user_data.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="main.js"></script>
   <script>
     let subMenu = document.getElementById("subMenu");
-    function toggleMenu(){
-         subMenu.classList.toggle("open-menu");
+    function toggleMenu() {
+      subMenu.classList.toggle("open-menu");
     }
   </script>
 </body>
