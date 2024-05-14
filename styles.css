@@ -86,6 +86,8 @@ img {
 a {
   text-decoration: none;
   transition: 0.3s;
+  color: var(--text-dark);
+  font-weight: 550;
 }
 
 ul {

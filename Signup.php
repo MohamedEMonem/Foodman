@@ -60,7 +60,7 @@ try {
     </header>
 
     <section class="form">
-        <p style="padding-bottom: 20px;">Sign Up</p>
+        <p style="padding-bottom: 3rem; font-weight:700; font-size :x-large">Sign Up</p>
         <form id="signupform" method="POST" action="register.php">
 
             <input class="name" type="text" name="fname" id="first-name" placeholder="First Name" required>
@@ -84,8 +84,9 @@ try {
 
         </form>
 
-        <a href="#" style="text-decoration: none;">Need Help?</a>
+        <a href="contact.html" style="text-decoration: none;">Need Help?</a><br><br>
         <hr>
+        <br>
         <a class="CNA" href="LoginPage.php" style="text-decoration: none;">Already have an account? Login</a>
         <br><br>
         <br><br>
