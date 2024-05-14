@@ -25,29 +25,6 @@ try {
 
     <body>
         <header>
-            <nav>
-                <div class="nav__header">
-                    <div class="logo nav__logo">
-                        <a href="#">Food<span>man</span></a>
-                    </div>
-                    <div class="nav__menu__btn" id="menu-btn">
-                        <span><i class="ri-menu-line"></i></span>
-                    </div>
-                </div>
-
-                <ul class="nav__links" id="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#special">Special</a></li>
-                    <li><a href="#chef">Chef</a></li>
-                    <li><a href="#client">Clients</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-
-                <div class="nav__btn">
-                    <button class="btn" title="Shopping Bag"><i class="ri-shopping-bag-fill"></i></button>
-                    <a href="logout.php" class="logout-button"><button class="ll">Logout</button></a>
-                </div>
-            </nav>
         </header>
 
         <div class="logo nav__logo" style="font-family: Poppins, sans-serif; text-align:center;">
