@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="contact.css" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="profilemenu.css" />
 </head>
 
 <body>
@@ -23,19 +24,43 @@
     </div>
     
     <ul class="nav__links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html">Special</a></li>
-      <li><a href="index.html">Chef</a></li>
-      <li><a href="index.html">Clients</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#special">Special</a></li>
+      <li><a href="#chef">Chef</a></li>
+      <li><a href="#client">Clients</a></li>
       <li><a href="contact.html">Contact Us</a></li>
     </ul>
 
     <div class="nav__btn">
       <button class="btn" title="Shopping Bag"><i class="ri-shopping-bag-fill"></i></button>
-      <a href="logout.php" class="logout-button"><button class="ll">Logout</button></a>
-    </div>
-  </nav>
+      <img src="assets/user.png" class="user" onclick="toggleMenu()">
+             <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                         <img src="assets/user.png">
+                         <h2>Freddie Mercury</h2>
+                    </div>
+                     <hr>
+                    <a href="profile.html" class="sub-menu-link">
+                     <img src="assets/profile.png">
+                     <p>Edit Profile</p>
+                    <span>></span>
 
+                     <a href="contact.html" class="sub-menu-link">
+                         <img src="assets/help.png">
+                         <p>Contact Us</p>
+                         <span>></span>
+                     </a>
+                     <a href="logout.php" class="sub-menu-link">
+                         <img src="assets/logout.png">
+                         <p>Logout</p>
+                         <span>></span>
+                     </a>
+                    </div>
+               </div>
+            </div>
+
+  </nav>
 
 
     <section class="section__container">
@@ -122,5 +147,11 @@
         });
             
     </script>
+      <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu(){
+             subMenu.classList.toggle("open-menu");
+        }
+      </script>
 </body>
 </html>
