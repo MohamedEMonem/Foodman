@@ -19,23 +19,47 @@ try {
     <head>
         <link rel="stylesheet" href="styles.css" />
         <link rel="stylesheet" href="login.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
 
     <body>
-
         <header>
-            <div class="logo nav__logo">
-                <a href="index.html">Food<span>man</span></a>
+    <nav>
+    <div class="nav__header">
+      <div class="logo nav__logo">
+        <a href="#">Food<span>man</span></a>
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <span><i class="ri-menu-line"></i></span>
+      </div>
+    </div>
+    
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#special">Special</a></li>
+      <li><a href="#chef">Chef</a></li>
+      <li><a href="#client">Clients</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <div class="nav__btn">
+      <button class="btn" title="Shopping Bag"><i class="ri-shopping-bag-fill"></i></button>
+      <a href="logout.php" class="logout-button"><button class="ll">Logout</button></a>
+    </div>
+  </nav>
+  </header>
+        
+            <div class="logo nav__logo" style="font-family: Poppins, sans-serif; text-align:center;">
+                <a href="index.html" style="font-size: 32px;">Food<span>man</span></a>
             </div>
-        </header>
+        
 
         <section class="form">
-            <p>Sign In</p>
+            <p style="padding-bottom: 20px;">Sign In</p>
             <form action="login.php" method="POST">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email"><br><br>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password"><br><br><br>
+                <input type="email" name="email" id="email" placeholder="Email"><br><br>
+                <input type="password" name="password" id="password" placeholder="password"><br><br><br>
                 <?php
                 $error = filter_input(INPUT_GET, 'error', FILTER_SANITIZE_SPECIAL_CHARS);
                 if (isset($_GET['error'])) {

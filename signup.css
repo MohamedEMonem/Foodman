@@ -2,15 +2,18 @@
     width: 25%;
     margin-left: 8.5em;
 }
-#foodman{
+.foodman {
     text-align: center;
     text-decoration: none;
+    font-family: Poppins, sans-serif;
+    color: #000;    
     
 }
 
-#confirm-password {
-    margin-left: 3em;
+.foodman span#s1 {
+    color: #fc7f09;
 }
+
 #errormessage{
     color: rgb(180, 31, 31);
     font-size: smaller;
@@ -21,7 +24,9 @@
 section form input {
     margin-left: 7.3em;
 }
-
+#confirm-password {
+    margin-left: 3em;
+}
 #email {
     margin-left: 0.1em;
 }
