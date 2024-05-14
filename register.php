@@ -40,6 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $_SESSION['Logged'] = true;
     $_SESSION['phone'] = $phone;
+    $_SESSION['email'] = $email;
     header("Location: index.html");
 } else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     header("Location: register.html");

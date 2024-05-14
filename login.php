@@ -30,6 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (password_verify($password, $row['password']) && $email == $row['email']) {
             $_SESSION['Logged'] = true;
             $_SESSION['phone'] = $phone;
+            $_SESSION['email'] = $email;
             header("Location: index.html");
             exit; // Ensure script stops here after redirect
         } else {
