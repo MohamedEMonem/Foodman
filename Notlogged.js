@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('fetch_user_data.php')
         .then(response => {
             if (response.status === 401) {
-                throw new Error('Network response was not ok');
+                window.location.href = 'loginPage.php';
             }
             if (!response.ok) {
                 throw new Error('Network response was not ok');
