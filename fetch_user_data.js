@@ -14,7 +14,6 @@ function fetch_user_data() {
                 console.error('Error fetching user data:', data.error);
             } else {
                 document.getElementById('name').textContent = data.name;
-
             }
         })
         .catch(error => console.error('Error fetching user data:', error));
