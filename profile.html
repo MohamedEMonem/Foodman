@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="profilemenu.css" />
     <title>Profile Page</title>
     <style>
         /* Add your CSS styles here */
@@ -17,27 +18,52 @@
 <body>
     <nav>
         <div class="nav__header">
-            <div class="logo nav__logo">
-                <a href="#">Food<span>man</span></a>
-            </div>
-            <div class="nav__menu__btn" id="menu-btn">
-                <span><i class="ri-menu-line"></i></span>
-            </div>
+          <div class="logo nav__logo">
+            <a href="#">Food<span>man</span></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <span><i class="ri-menu-line"></i></span>
+          </div>
         </div>
-
+        
         <ul class="nav__links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#special">Special</a></li>
-            <li><a href="#chef">Chef</a></li>
-            <li><a href="#client">Clients</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#special">Special</a></li>
+          <li><a href="#chef">Chef</a></li>
+          <li><a href="#client">Clients</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
-
+    
         <div class="nav__btn">
-            <button class="btn" title="Shopping Bag"><i class="ri-shopping-bag-fill"></i></button>
-            <a href="logout.php" class="logout-button"><button class="ll">Logout</button></a>
-        </div>
-    </nav>
+          <button class="btn" title="Shopping Bag"><i class="ri-shopping-bag-fill"></i></button>
+          <img src="assets/user.png" class="user" onclick="toggleMenu()">
+                 <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                             <img src="assets/user.png">
+                             <h2>Freddie Mercury</h2>
+                        </div>
+                         <hr>
+                        <a href="profile.html" class="sub-menu-link">
+                         <img src="assets/profile.png">
+                         <p>Profile</p>
+                        <span>></span>
+    
+                         <a href="contact.html" class="sub-menu-link">
+                             <img src="assets/help.png">
+                             <p>Contact Us</p>
+                             <span>></span>
+                         </a>
+                         <a href="logout.php" class="sub-menu-link">
+                             <img src="assets/logout.png">
+                             <p>Logout</p>
+                             <span>></span>
+                         </a>
+                        </div>
+                   </div>
+                </div>
+    
+      </nav>
     <div class="profile-container">
         <h1>User Profile</h1>
         <p><strong>Welcome, <span id="name"></span></strong></p>
@@ -89,6 +115,12 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu(){
+             subMenu.classList.toggle("open-menu");
+        }
+      </script>
 </body>
 
 </html>
