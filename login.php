@@ -11,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit;
     }
 
+    
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         header("Location: loginPage.php?error=invalidemail");
         exit;
