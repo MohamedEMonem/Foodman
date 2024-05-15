@@ -25,11 +25,12 @@ try {
 
     <body>
         <header>
+            <br><br>
+            <div class="logo nav__logo" style="font-family: Poppins, sans-serif; text-align:center;">
+                <a href="index.html" style="font-size: 32px;">Food<span>Man</span></a>
+            </div>
         </header>
 
-        <div class="logo nav__logo" style="font-family: Poppins, sans-serif; text-align:center;">
-            <a href="index.html" style="font-size: 32px;">Food<span>man</span></a>
-        </div>
 
 
         <section class="form">

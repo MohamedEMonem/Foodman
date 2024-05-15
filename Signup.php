@@ -29,9 +29,10 @@ try {
 
 <body>
     <header>
+        <br><br>
         <a href="index.html">
             <div class="foodman">
-            <h1 ><span id="s1">Food</span>Man</h1>
+                <h1><span id="s1">Food</span>Man</h1>
             </div>
         </a>
     </header>
@@ -45,7 +46,7 @@ try {
             <input class="name " type="text" name="lname" id="last-name" placeholder="Last Name" required>
 
             <input type="email" name="email" id="email" placeholder="Email" required>
-            
+
             <input type="password" name="password" id="password" placeholder="Password" required>
             <!-- style this element -->
             <!-- style this element -->
